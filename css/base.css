@@ -100,7 +100,10 @@
 	background: #29b4ee;
 
 }
-
+.banner .swiper-container img{
+	display: block;
+	width: 100%;
+}
 .banner .swiper-container {
 	position: relative;
 }
@@ -171,6 +174,7 @@
 	border: 1px solid #ddd;
 	font-size: 12px;
 	color: #666;
+	margin-bottom: 20px;
 }
 
 .sf-filter .sf-filter-row .sf-filter-key {
@@ -203,7 +207,7 @@
 	height: 28px;
 	display: block;
 	border: 1px solid #ddd;
-	border-bottom: none;
+	/* border-bottom: none; */
 	text-align: center;
 	line-height: 27px;
 	cursor: pointer;
@@ -247,10 +251,17 @@
 	text-align: center;
 }
 
+.sf-filter .sf-filter-row .condition {
+	position: relative;
+}
+
 .sf-filter .sf-filter-row .sub-condition {
 	border: 1px solid #ddd;
 	display: none;
 	padding: 8px 20px;
+	background: #fff;
+	position: relative;
+	top: -1px;
 }
 
 .sf-filter .sf-filter-row .sf-filter-value a {
@@ -263,6 +274,7 @@
 	margin: 0 12px;
 	color: #666;
 }
+
 .sf-filter .sf-filter-row .sf-filter-value a.active,
 .sf-filter .sf-filter-row .sf-filter-value .unlimited a.active,
 .sf-filter .sf-filter-row .sub-condition .triggle.unfold>.open>span {
@@ -283,11 +295,13 @@
 .sf-filter .sf-filter-row .sub-condition .triggle {
 	width: 95px;
 }
+
 .sf-filter .sf-filter-row .sub-condition .sub-condition .triggle {
 	width: 55px;
 }
+
 .sf-filter .sf-filter-row .triggle.twotriggle {
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 
 .sf-filter .sf-filter-row .area .sub-condition {
@@ -299,9 +313,10 @@
 	padding: 5px 5px 10px;
 }
 
-.sf-filter .sf-filter-row .sf-filter-value .sub-condition .condition a{
+.sf-filter .sf-filter-row .sf-filter-value .sub-condition .condition a {
 	margin: 12px;
 }
+
 /* .sf-filter .sf-filter-row .sub-condition .sub-condition {
 	top: 0;
 } */
@@ -312,6 +327,19 @@
 
 .sf-filter .sf-filter-row .sf-filter-value .sub-condition .unlimited a {
 	margin: 12px 0;
+}
+
+/* 一键重置 */
+.sf-filter .sf-filter-row .sf-filter-value .reset-btn {
+	color: #fff;
+	background: #29b4ee;
+	font-size: 14px;
+	border: none;
+	line-height: 30px;
+	width: 90px;
+	margin: 0 auto;
+	text-align: center;
+	display: block;
 }
 
 /* 拍卖汽车列表 */
@@ -325,7 +353,6 @@
 	display: block;
 	position: relative;
 	width: 285px;
-	height: 356px;
 	margin: 20px 10px 0;
 }
 
@@ -397,10 +424,6 @@
 
 .sf-pai-item-list .pai-item .footer-section {
 	border-top: 1px solid #eee;
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 278px;
 	height: 36px;
 	line-height: 36px;
 }
@@ -440,12 +463,37 @@
 
 }
 
+.sf-pai-item-list .pai-item .tag-section p {
+	float: left;
+	width: 50%;
+	height: 38px;
+	line-height: 38px;
+	color: #fff;
+	text-align: center;
+	background: #ddd;
+}
+
+.sf-pai-item-list .pai-item .tag-section p.btn-blue {
+	background: #29b4ee;
+}
+
+.sf-pai-item-list .pai-item .tag-section p.btn-yellow {
+	background: #f6ad1e;
+}
+
 /* 筛选 */
 
 .sf-scroll-fixed {
-	margin: 20px 0 0;
 	background-color: #fafafa;
 	border: 1px solid #e2e2e2;
+}
+
+.sf-scroll-fixed.fixed {
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 999;
 }
 
 .sf-scroll-fixed .block {

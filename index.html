@@ -168,9 +168,53 @@
 										<a href="javascript:;">不限</a>
 									</div>
 									<div class="condition flex-1 flex flex-wrap flex-align-start">
-										<div class="triggle twotriggle unfold">
+										<div class="triggle twotriggle">
 											<span class="open"><span>广东</span><i class="arrow"></i></span>
-											<div class="sub-condition " style="display: block;width:840px;">
+											<div class="sub-condition " style="width:840px;">
+												<div class="flex">
+													<div class="unlimited">
+														<a href="javascript:;" class="active">全省</a>
+													</div>
+													<div class="condition flex-1 flex flex-wrap">
+														<div class="triggle threetriggle">
+															<span class="open"><span>广州 </span><i class="arrow"></i></span>
+														</div>
+														<div class="triggle threetriggle">
+															<span class="open"><span>广州 </span><i class="arrow"></i></span>
+														</div>
+														<div class="triggle threetriggle">
+															<span class="open"><span>广州 </span><i class="arrow"></i></span>
+														</div>
+														<div class="sub-condition" style="width: 770px;display: block;">
+															<div class="flex">
+																<div class="unlimited">
+																	<a href="javascript:;">全市</a>
+																</div>
+																<div class="condition flex-1 flex flex-wrap">
+																	<a href="javascript:;">荔湾</a>
+																	<a href="javascript:;">越秀</a>
+																	<a href="javascript:;">海珠</a>
+																	<a href="javascript:;">天河</a>
+																	<a href="javascript:;">白云</a>
+																	<a href="javascript:;">黄埔</a>
+																	<a href="javascript:;">番禺</a>
+																	<a href="javascript:;">花都</a>
+																	<a href="javascript:;">南沙</a>
+																	<a href="javascript:;">萝岗</a>
+																	<a href="javascript:;">增城</a>
+																	<a href="javascript:;">从化</a>
+																	<a href="javascript:;">东山</a>
+																	<a href="javascript:;">其他</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="triggle twotriggle">
+											<span class="open"><span>北京</span><i class="arrow"></i></span>
+											<div class="sub-condition " style="width:840px;">
 												<div class="flex">
 													<div class="unlimited">
 														<a href="javascript:;">全省</a>
@@ -185,7 +229,7 @@
 														<div class="triggle">
 															<span class="open"><span>广州 </span><i class="arrow"></i></span>
 														</div>
-														<div class="sub-condition flex" style="display: block;width: 770px;">
+														<div class="sub-condition flex" style="width: 770px;">
 															<div class="unlimited">
 																<a href="javascript:;" class="active">全市</a>
 															</div>
@@ -210,46 +254,6 @@
 												</div>
 											</div>
 										</div>
-										<div class="triggle twotriggle">
-											<span class="open"><span>北京</span><i class="arrow"></i></span>
-											<div class="sub-condition">
-												<div class="unlimited">
-													<a href="javascript:;">全省</a>
-												</div>
-												<div class="condition flex-1 flex flex-wrap">
-													<div class="triggle area unfold">
-														<span class="open"><span>广州 </span><i class="arrow"></i></span>
-													</div>
-													<div class="triggle">
-														<span class="open"><span>广州 </span><i class="arrow"></i></span>
-													</div>
-													<div class="triggle">
-														<span class="open"><span>广州 </span><i class="arrow"></i></span>
-													</div>
-													<div class="sub-condition flex" style="display: block;width: 821px;">
-														<div class="unlimited">
-															<a href="javascript:;" class="active">全市</a>
-														</div>
-														<div class="condition flex-1 flex flex-wrap">
-															<a href="javascript:;">荔湾</a>
-															<a href="javascript:;">越秀</a>
-															<a href="javascript:;">海珠</a>
-															<a href="javascript:;">天河</a>
-															<a href="javascript:;">白云</a>
-															<a href="javascript:;">黄埔</a>
-															<a href="javascript:;">番禺</a>
-															<a href="javascript:;">花都</a>
-															<a href="javascript:;">南沙</a>
-															<a href="javascript:;">萝岗</a>
-															<a href="javascript:;">增城</a>
-															<a href="javascript:;">从化</a>
-															<a href="javascript:;">东山</a>
-															<a href="javascript:;">其他</a>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
 									</div>
 								</div>
 							</div>
@@ -257,8 +261,15 @@
 
 					</div>
 				</div>
+				<div class="sf-filter-row  flex ">
+					<div class="sf-filter-key"></div>
+					<div class="sf-filter-value flex-1">
+						<button class="reset-btn">一键重置</button>
+					</div>
+				</div>
 			</div>
-			<div class="sf-scroll-fixed">
+			<div class="J-sf-scroll-fixed"></div>
+			<div class="sf-scroll-fixed w1200">
 				<ul class="clearfix">
 					<li class="block">共有标的物（<em class="count text-red">694</em>）</li>
 					<li class="block price">
@@ -309,7 +320,11 @@
 					<div class="flag-section">
 						<div class="flag">已结束</div>
 					</div>
+					<div class="tag-section clearfix">
+						<p class="btn-blue">场外直购</p>
+						<p class="btn-yellow">场内竞拍</p>
 
+					</div>
 				</a>
 				<a class="pai-item" href="">
 					<div class="header-section ">
@@ -341,7 +356,11 @@
 					<div class="flag-section">
 						<div class="flag">中 止</div>
 					</div>
+					<div class="tag-section clearfix">
+						<p>场外直购</p>
+						<p class="btn-yellow">场内竞拍</p>
 
+					</div>
 				</a>
 				<a class="pai-item" href="">
 					<div class="header-section ">
@@ -373,7 +392,11 @@
 					<div class="flag-section">
 						<div class="flag">撤 回</div>
 					</div>
+					<div class="tag-section clearfix">
+						<p class="btn-blue">场外直购</p>
+						<p class="btn-yellow">场内竞拍</p>
 
+					</div>
 				</a>
 				<a class="pai-item" href="">
 					<div class="header-section ">
@@ -401,24 +424,24 @@
 						<p class="num-auction"><em class="pai-xmpp-viewer-count">11479</em>次围观</p>
 						<p class="num-apply"><em>0</em>人报名</p>
 					</div>
+					<div class="tag-section clearfix">
+						<p class="btn-blue">场外直购</p>
+						<p class="btn-yellow">场内竞拍</p>
 
+					</div>
 				</a>
 			</div>
-			<!-- 分页 -->
-			<div class="pagination J_Pagination" data-spm="pagination">
-				<span class="previous unavailable"><span class="arrow-left">‹</span></span>
-				<span class="current" data-spm-anchor-id="a213w.7398504.pagination.i0.495f47d2oJdTun">1</span>
+			<!-- 分页-->
+			<div class="pagination ">
+				<span class="previous unavailable">
+					<span class="arrow-left">‹</span>
+				</span>
+				<span class="current">1</span>
 				<span class="next unavailable"><span class="arrow-right">›</span></span>
 				<span class="page-skip">
 					共<em class="page-total">1</em>页
-					<label>到第<input type="text" name="pageJump" class="page-jump J_PageJump" size="3">页</label>
-					<div class="tip-wrap J_MaxTip">
-						<div class="tip">数字请不要大于总页数</div>
-						<div class="triangle-box">
-							<div class="triangle"></div>
-						</div>
-					</div>
-					<button class="J_PageSkipSubmit">确定</button>
+					<label>到第<input type="text" name="pageJump" class="page-jump" size="3">页</label>
+					<button>确定</button>
 				</span>
 			</div>
 			<!-- 入驻机构 -->
@@ -510,5 +533,54 @@
 		pagination: {
 			el: '.swiper-pagination',
 		},
+	});
+
+	function checkscroll() {
+		var winPos = $(window).scrollTop(); //屏幕位置
+		var nodeTop = $('.J-sf-scroll-fixed').offset().top;
+		if (winPos > nodeTop) {
+			$('.sf-scroll-fixed').addClass('fixed')
+		} else {
+			$('.sf-scroll-fixed').removeClass('fixed')
+		}
+	}
+	$(window).scroll(function(event) {
+		checkscroll()
+	});
+	$('.sf-filter').on('click', '.sf-filter-value a', function(e) {
+		e.stopPropagation();
+		if ($(this).parent().hasClass('unlimited')) {
+			$(this).parent().next('.condition').find('a').removeClass('active');
+			$(this).parent().next('.condition').find('.triggle').removeClass('unfold');
+			$(this).parent().next('.condition').find('.sub-condition').hide()
+		} else {
+			$(this).siblings().removeClass('active');
+			$(this).closest('.condition').prev('.unlimited').find('a').removeClass('active')
+
+		}
+		$(this).addClass('active')
+
+	});
+
+	$('.sf-filter').on('click', '.twotriggle', function(e) {
+		e.stopPropagation();
+		$(this).closest('.condition').prev('.unlimited').find('a').removeClass(
+			'active');
+		$(this).addClass('unfold').siblings().removeClass('unfold').find('.sub-condition').hide()
+		$(this).children('.sub-condition').show().css('left', $(this).position().left * -1 + 'px');
+	});
+	$('.sf-filter').on('click', '.threetriggle', function(e) {
+		e.stopPropagation();
+		$(this).closest('.condition').prev('.unlimited').find('a').removeClass(
+			'active');
+		$(this).addClass('unfold').siblings().removeClass('unfold');
+		$(this).siblings('.sub-condition').show()
+	});
+	$('.sf-filter').on('click', '.triggletab', function(e) {
+		e.stopPropagation();
+		$(this).closest('.condition').prev('.unlimited').find('a').removeClass(
+			'active');
+		$(this).addClass('unfold').siblings().removeClass('unfold');
+		$(this).closest('.condition').children('.sub-condition').show()
 	});
 </script>
