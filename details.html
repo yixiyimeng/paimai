@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>缴纳保证金</title>
+		<link rel="stylesheet" type="text/css" href="css/PCreset.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/details.css" />
+	</head>
+	<body>
+		<div class="header">
+			<div class="top-nav">
+				<div class="w1200 clearfix">
+					<div class="top-left-nav left">
+						<a href="">
+							<img src="img/nav/icon1.png">
+							<span>拍卖流程</span>
+						</a>
+						<span class="line"></span>
+						<a href="">
+							<img src="img/nav/icon2.png">
+							<span>常见问题</span>
+						</a>
+						<span class="line"></span>
+						<a href="">
+							<img src="img/nav/icon3.png">
+							<span>问题反馈</span>
+						</a>
+						<span class="line"></span>
+						<a href="">
+							<img src="img/nav/icon4.png">
+							<span>联系我们</span>
+						</a>
+					</div>
+					<div class="top-right-nav right">
+						<a href="">
+							<img src="img/nav/icon5.png">
+							<span>我的拍卖</span>
+						</a>
+						<span class="line"></span>
+						<a href="">
+							<span>官方客服 </span>
+							<img src="img/nav/icon6.png">
+							<span>400-888-8888</span>
+						</a>
+
+					</div>
+				</div>
+			</div>
+			<img src="img/logo.png" class="main-logo">
+			<div class="nav-con">
+				<div class="w1200 clearfix">
+					<div class="main-nav left">
+						<a href="index">首页</a>
+					</div>
+					<div class="searchbar right flex flex-align-center">
+						<img src="img/nav/icon7.png">
+						<input type="text" class="flex-1" placeholder="资产名称/关键字">
+						<a href="javascript:;" class="search-btn">搜索</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="main-content w1200">
+			<div class="order-info">
+				<div class="title">标的物信息</div>
+				<div class="pm-info"></div>
+			</div>
+		</div>
+		<!-- footer -->
+		<div class="footer">
+			<div class="sf-footer w1200 flex">
+				<div class="list-row flex-1">
+					<h3>竞价学堂</h3>
+					<ul>
+						<li>
+							<a href=""><i>·</i>“保留价”功能介绍</a>
+						</li>
+						<li><a href=""><i>·</i>评估功能介绍</a></li>
+						<li><a href=""><i>·</i>“出价延时”功能介绍</a></li>
+						<li><a href=""><i>·</i>佣金规则介绍</a></li>
+						<li><a href=""><i>·</i>何为竞价买人资质</a></li>
+					</ul>
+				</div>
+				<div class="list-row flex-1">
+					<h3>竞买人帮助</h3>
+					<ul>
+						<li>
+							<a href=""><i>·</i>如何注册淘宝账号</a>
+						</li>
+						<li><a href=""><i>·</i>参与竞价详细教程</a></li>
+						<li><a href=""><i>·</i>竞价流程图</a></li>
+					</ul>
+				</div>
+				<div class="qrcode"><img src="img/qr.jpg"></div>
+				<div class="list-row flex-1">
+					<h3>支付帮助</h3>
+					<ul>
+						<li><a href=""><i>·</i>支付宝如何实名认证</a></li>
+						<li><a href=""><i>·</i>如何报名并缴纳保证金</a></li>
+						<li><a href=""><i>·</i>尾款如何支付</a></li>
+						<li><a href=""><i>·</i>出局者保证金退回银行卡</a></li>
+					</ul>
+				</div>
+				<div class="list-row flex-1">
+					<h3>机构帮助中心</h3>
+					<ul>
+						<li>
+							<a href=""><i>·</i>平台最新公告</a>
+						</li>
+						<li>
+							<a href=""><i>·</i>平台基础规则</a>
+						</li>
+						<li><a href=""><i>·</i>平台收费标准</a></li>
+						<li><a href=""><i>·</i>机构入驻指南</a></li>
+						<li><a href=""><i>·</i>后台操作地址</a></li>
+						<li><a href=""><i>·</i>后台操作指南</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="copyright">版权所有：©2020 广州智慧财通投资咨询有限公司 All rights reserved. 粤ICP备20065293号</div>
+		</div>
+	</body>
+</html>
+<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var swiper = new Swiper('.banner .swiper-container', {
+		pagination: {
+			el: '.swiper-pagination',
+		},
+	});
+	var swiper2 = new Swiper('.organization .swiper-container', {
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	});
+
+	function checkscroll() {
+		var winPos = $(window).scrollTop(); //屏幕位置
+		var nodeTop = $('.J-sf-scroll-fixed').offset().top;
+		if (winPos > nodeTop) {
+			$('.sf-scroll-fixed').addClass('fixed')
+		} else {
+			$('.sf-scroll-fixed').removeClass('fixed')
+		}
+	}
+	$(window).scroll(function(event) {
+		checkscroll()
+	});
+	$('.sf-filter').on('click', '.sf-filter-value a', function(e) {
+		e.stopPropagation();
+		if ($(this).parent().hasClass('unlimited')) {
+			$(this).parent().next('.condition').find('a').removeClass('active');
+			$(this).parent().next('.condition').find('.triggle').removeClass('unfold');
+			$(this).parent().next('.condition').find('.sub-condition').hide()
+		} else {
+			$(this).siblings().removeClass('active');
+			$(this).closest('.condition').prev('.unlimited').find('a').removeClass('active')
+
+		}
+		$(this).addClass('active')
+
+	});
+
+	$('.sf-filter').on('click', '.twotriggle', function(e) {
+		e.stopPropagation();
+		$(this).closest('.condition').prev('.unlimited').find('a').removeClass(
+			'active');
+		$(this).addClass('unfold').siblings().removeClass('unfold').find('.sub-condition').hide()
+		$(this).children('.sub-condition').show().css('left', $(this).position().left * -1 + 'px');
+	});
+	$('.sf-filter').on('click', '.threetriggle', function(e) {
+		e.stopPropagation();
+		$(this).closest('.condition').prev('.unlimited').find('a').removeClass(
+			'active');
+		$(this).addClass('unfold').siblings().removeClass('unfold');
+		$(this).siblings('.sub-condition').show()
+	});
+	$('.sf-filter').on('click', '.triggletab', function(e) {
+		e.stopPropagation();
+		$(this).closest('.condition').prev('.unlimited').find('a').removeClass(
+			'active');
+		$(this).addClass('unfold').siblings().removeClass('unfold');
+		$(this).closest('.condition').children('.sub-condition').show()
+	});
+</script>
