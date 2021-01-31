@@ -93,9 +93,11 @@
 	padding-right: 5px;
 	color: #999;
 }
-.sf-filter .sf-filter-row .condition form .group+span{
+
+.sf-filter .sf-filter-row .condition form .group+span {
 	margin: 0 5px;
 }
+
 .sf-filter .sf-filter-row .condition form input[type="submit"] {
 	color: #fff;
 	background: #29b4ee;
@@ -220,6 +222,12 @@
 	position: relative;
 	width: 285px;
 	margin: 20px 10px 0;
+}
+
+.sf-pai-item-list .pai-item:hover {
+	border-color: #29b4ee;
+	outline: 2px solid #29b4ee;
+	text-decoration: none
 }
 
 .sf-pai-item-list .pai-item .header-section {
@@ -419,6 +427,7 @@
 	float: left;
 	margin-right: 15px;
 }
+
 /*机构 */
 .organization {
 	color: #333;

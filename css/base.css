@@ -9,12 +9,54 @@
 	margin-left: 10px;
 }
 
+.ml20 {
+	margin-left: 20px;
+}
+
+.mt10 {
+	margin-top: 10px;
+}
+
+.mt20 {
+	margin-top: 20px;
+}
+.mt50{
+	margin-top: 50px;
+}
+.mb10 {
+	margin-bottom: 10px;
+}
+
+.pt20 {
+	padding-top: 20px;
+}
+
+.pb20 {
+	padding-bottom: 20px;
+}
+
 .text-green {
 	color: #19aa6b;
 }
 
 .text-red {
 	color: #e20100;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.solid-bottom {
+	border-bottom: 1px solid #eee;
 }
 
 .header {
