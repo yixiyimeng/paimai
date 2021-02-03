@@ -496,6 +496,39 @@
 			</div>
 			<div class="copyright">版权所有：©2020 广州智慧财通投资咨询有限公司 All rights reserved. 粤ICP备20065293号</div>
 		</div>
+		<!-- 弹出框 场外 -->
+		<div class="modal modal-out">
+			<div class="modal-body">
+				<div class="modal-hd flex flex-pack-justify flex-align-center">
+					<span>场外直购</span>
+					<a href="javascript:;" class="close"></a>
+				</div>
+				<div class="modal-bd">
+					<p>请根据你的情况，点击下方按钮</p>
+				</div>
+				<div class="modal-ft flex flex-pack-center">
+					<a href="javascript:;" class="save">确定</a>
+					<a href="javascript:;" class="help">如何场外直购</a>
+				</div>
+			</div>
+		</div>
+		<!-- 弹出框 场内 -->
+		<div class="modal modal-in">
+			<div class="modal-body">
+				<div class="modal-hd flex flex-pack-justify flex-align-center">
+					<span>场内直购</span>
+					<a href="javascript:;" class="close"></a>
+				</div>
+				<div class="modal-bd">
+					<p>请输入您的价格</p>
+					<input type="text">
+				</div>
+				<div class="modal-ft flex flex-pack-center">
+					<a href="javascript:;" class="save">确定</a>
+					<a href="javascript:;" class="cancel">取消</a>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
 <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
@@ -586,16 +619,28 @@
 		// var html = "<span>" + p(oDay) + "天</span>" + "<span>" + p(oHours) + "时</span>" + "<span>" + p(oMinutes) + "分</span>" +
 		// 	"<span>" + p(oSeconds) + "秒</span>";
 		// document.getElementById('time').innerHTML = html;
-		let haoscend = parseInt((endTime.getTime() - startTime.getTime()) % 1000/100)
+		let haoscend = parseInt((endTime.getTime() - startTime.getTime()) % 1000 / 100)
 		console.log('oHours', oHours)
 		var html = "<var>" + p(oDay) + "</var><em>天</em><var>" + p(oHours) + "</var><em>时</em><var>" + p(oMinutes) +
-			"</var><em>分</em><var>" + p(oSeconds) +(haoscend>0?('.'+haoscend):'')+"</var><em>秒</em>"
+			"</var><em>分</em><var>" + p(oSeconds) + "</var><em>秒</em>"
 		$('.J_TimeLeft').html(html);
-		//别忘记当时间为0的，要让其知道结束了;
 
 	}
 	newTime()
 	setInterval(() => {
 		newTime()
-	}, 100)
+	}, 1000);
+
+	/* 场外购买 */
+	$('.tag-section').on('click', 'a', function() {
+		if ($(this).hasClass('btn-blue')) {
+			$('.modal-out').addClass('show')
+		} else {
+			$('.modal-in').addClass('show')
+		}
+	});
+	/* 关闭弹框 */
+	$('.modal .close,.modal .cancel').click(function() {
+		$(this).parents('.modal').removeClass('show')
+	})
 </script>
