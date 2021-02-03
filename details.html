@@ -560,9 +560,8 @@
 		} else {
 			val = val + rang;
 		}
-
 		$('.plus-minus-operation input').val(toThousands(val))
-	})
+	});
 	$('.plus-minus-operation a.minus.btn-blue').click(function() {
 		let val = $('.plus-minus-operation input').val().replace(',', '');
 		if (val.length > 0) {
@@ -580,13 +579,12 @@
 
 		$('.plus-minus-operation input').val(toThousands(val))
 	});
-	/* 倒计时 */
-	let endDate = '2021-03-04 10:11:11';
 
 	function p(n) {
 		return n < 10 ? '0' + n : n;
 	}
-
+	/* 倒计时 */
+	var endDate = '2021/03/04 10:11:11';
 	//倒计时函数
 	function newTime() {
 		//定义当前时间
@@ -603,7 +601,6 @@
 		}
 		//获取天数 1天 = 24小时  1小时= 60分 1分 = 60秒
 		var oDay = parseInt(countDown / (24 * 60 * 60));
-
 		//获取小时数 
 		//特别留意 %24 这是因为需要剔除掉整的天数;
 		var oHours = parseInt(countDown / (60 * 60) % 24);
@@ -620,16 +617,16 @@
 		// 	"<span>" + p(oSeconds) + "秒</span>";
 		// document.getElementById('time').innerHTML = html;
 		let haoscend = parseInt((endTime.getTime() - startTime.getTime()) % 1000 / 100)
-		console.log('oHours', oHours)
-		var html = "<var>" + p(oDay) + "</var><em>天</em><var>" + p(oHours) + "</var><em>时</em><var>" + p(oMinutes) +
+		var html = "<var>" + p(oDay) + "</var><em>天</em><var>" + p(oHours) +
+			"</var><em>时</em><var>" + p(oMinutes) +
 			"</var><em>分</em><var>" + p(oSeconds) + "</var><em>秒</em>"
 		$('.J_TimeLeft').html(html);
 
 	}
 	newTime()
-	setInterval(() => {
+	setInterval(function() {
 		newTime()
-	}, 1000);
+	}, 1000)
 
 	/* 场外购买 */
 	$('.tag-section').on('click', 'a', function() {

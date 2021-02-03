@@ -376,7 +376,6 @@
 	bottom: 0;
 	left: 0;
 	z-index: 1110;
-	opacity: 0;
 	outline: 0;
 	text-align: center;
 	-ms-transform: scale(1.185);
@@ -386,6 +385,7 @@
 	background: rgba(0, 0, 0, 0.6);
 	transition: all 0.3s ease-in-out 0s;
 	pointer-events: none;
+	display: none;
 }
 
 .modal>div {
@@ -407,6 +407,7 @@
 	overflow-x: hidden;
 	overflow-y: auto;
 	pointer-events: auto;
+	display: block;
 }
 
 .modal .modal-hd {
