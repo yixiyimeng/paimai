@@ -130,6 +130,7 @@
 										<a href="javascript:;" class="plus btn-blue"></a>
 										<a href="javascript:;" class="minus btn-blue"></a>
 									</div>
+									<a href="javascript:;" class="save-btn btn-blue">出价</a>
 								</div>
 								<div class="flex flex-align-center mt20">
 									<a href="javascript:;" class="pm-apply-button flex flex-align-center flex-v flex-pack-center">
@@ -539,11 +540,62 @@
 		let min = $('.plus-minus-operation input').attr('data-min') - 0;
 		if (val - rang < min) {
 			val = min;
-			
+
 		} else {
 			val = val - rang;
 		}
-		
+
 		$('.plus-minus-operation input').val(toThousands(val))
-	})
+	});
+	/* 倒计时 */
+	let endDate = '2021-03-04 10:11:11';
+
+	function p(n) {
+		return n < 10 ? '0' + n : n;
+	}
+
+	//倒计时函数
+	function newTime() {
+		//定义当前时间
+		var startTime = new Date();
+		//定义结束时间
+		var endTime = new Date(endDate);
+
+		//算出中间差并且已毫秒数返回; 除以1000将毫秒数转化成秒数方便运算；
+		var countDown = (endTime.getTime() - startTime.getTime()) / 1000;
+		if (countDown < 0) {
+			var html = "<var>00</var><em>天</em><var>00</var><em>时</em><var>00</var><em>分</em><var>00</var><em>秒</em>"
+			$('.J_TimeLeft').html(html);
+			return false;
+		}
+		//获取天数 1天 = 24小时  1小时= 60分 1分 = 60秒
+		var oDay = parseInt(countDown / (24 * 60 * 60));
+
+		//获取小时数 
+		//特别留意 %24 这是因为需要剔除掉整的天数;
+		var oHours = parseInt(countDown / (60 * 60) % 24);
+
+		//获取分钟数
+		//同理剔除掉分钟数
+		var oMinutes = parseInt(countDown / 60 % 60);
+
+		//获取秒数
+		//因为就是秒数  所以取得余数即可
+		var oSeconds = parseInt(countDown % 60);
+		//下面就是插入到页面事先准备容器即可;
+		// var html = "<span>" + p(oDay) + "天</span>" + "<span>" + p(oHours) + "时</span>" + "<span>" + p(oMinutes) + "分</span>" +
+		// 	"<span>" + p(oSeconds) + "秒</span>";
+		// document.getElementById('time').innerHTML = html;
+		let haoscend = parseInt((endTime.getTime() - startTime.getTime()) % 1000/100)
+		console.log('oHours', oHours)
+		var html = "<var>" + p(oDay) + "</var><em>天</em><var>" + p(oHours) + "</var><em>时</em><var>" + p(oMinutes) +
+			"</var><em>分</em><var>" + p(oSeconds) +(haoscend>0?('.'+haoscend):'')+"</var><em>秒</em>"
+		$('.J_TimeLeft').html(html);
+		//别忘记当时间为0的，要让其知道结束了;
+
+	}
+	newTime()
+	setInterval(() => {
+		newTime()
+	}, 100)
 </script>

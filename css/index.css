@@ -292,7 +292,7 @@
 .sf-pai-item-list .pai-item .info-section .time .value {
 	font-family: tahoma, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
 	color: #333;
-	padding-left: 10px;
+	/* padding-left: 10px; */
 	font-weight: 700;
 }
 
@@ -346,7 +346,9 @@
 	text-align: center;
 	background: #ddd;
 }
-
+.sf-pai-item-list .pai-item .tag-section p+p{
+	border-left: 1px solid #eee;
+}
 .sf-pai-item-list .pai-item .tag-section p.btn-blue {
 	background: #29b4ee;
 }
@@ -423,11 +425,18 @@
 	border: none;
 }
 
-.sf-scroll-fixed .block.order a {
+.sf-scroll-fixed .block.order a{
 	float: left;
 	margin-right: 15px;
 }
-
+.sf-scroll-fixed .block.order a.up,
+.sf-scroll-fixed .block.order a.down{
+	padding-right: 20px;
+	background: url(../img/up.png) no-repeat right center;
+}
+.sf-scroll-fixed .block.order a.down{
+	background-image: url(../img/down.png);
+}
 /*机构 */
 .organization {
 	color: #333;
