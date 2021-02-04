@@ -191,7 +191,7 @@
 			<div class="pm-addition">
 				<div class="detail-for-remind">
 					<ul class="tab-menu clearfix">
-						<li>
+						<li class="active">
 							<a href="javascript:;">标的物介绍</a>
 						</li>
 						<li>
@@ -201,7 +201,7 @@
 							<a href="javascript:;">竞买须知</a>
 						</li>
 						<li>
-							<a href="javascript:;">竞买记录（12）</a>
+							<a href="javascript:;">竞买记录（<em>12</em>）</a>
 						</li>
 						<li class="qrCode-tab ">
 							<a href="javascript:;">
@@ -613,9 +613,6 @@
 		//因为就是秒数  所以取得余数即可
 		var oSeconds = parseInt(countDown % 60);
 		//下面就是插入到页面事先准备容器即可;
-		// var html = "<span>" + p(oDay) + "天</span>" + "<span>" + p(oHours) + "时</span>" + "<span>" + p(oMinutes) + "分</span>" +
-		// 	"<span>" + p(oSeconds) + "秒</span>";
-		// document.getElementById('time').innerHTML = html;
 		let haoscend = parseInt((endTime.getTime() - startTime.getTime()) % 1000 / 100)
 		var html = "<var>" + p(oDay) + "</var><em>天</em><var>" + p(oHours) +
 			"</var><em>时</em><var>" + p(oMinutes) +
@@ -639,5 +636,53 @@
 	/* 关闭弹框 */
 	$('.modal .close,.modal .cancel').click(function() {
 		$(this).parents('.modal').removeClass('show')
-	})
+	});
+	let flag = false;
+	/* 详情tab切换 */
+	$('.tab-menu li').click(function() {
+		var index = $(this).index();
+		$(this).addClass('active').siblings().removeClass('active');
+		var nodeTop = $('.detail-main .pai-title').eq(index).offset().top;;
+		flag = true;
+		$('html,body').animate({ //滑动效果主要用到jq的animate函数
+			scrollTop: nodeTop - 55
+		}, 500, function() {
+			flag = false
+		});
+	});
+
+	function checkscroll() {
+		if (flag) {
+			return false
+		}
+		var winPos = $(window).scrollTop(); //屏幕位置
+		var NodePos = [];
+		$('.detail-main .pai-title').each(function(item) {
+			NodePos.push($(this).offset().top - 56)
+		});
+		var length = NodePos.length;
+		if (winPos <= NodePos[1]) {
+			$('.tab-menu li').removeClass('active');
+			$('.tab-menu li:nth-child(1)').addClass('active');
+		} else {
+			for (var i = 1; i < length; i++) {
+				if ((i < length - 1 && winPos < NodePos[i + 1] && winPos >= NodePos[i]) || (i == length - 1 && winPos >= NodePos[i])) {
+					$('.tab-menu li').removeClass('active');
+					$('.tab-menu li:nth-child(' + (i + 1) + ')').addClass('active');
+					break;
+				}
+			}
+		}
+
+	}
+	$(window).scroll(function(event) {
+		var winPos = $(window).scrollTop(); //屏幕位置
+		var nodeTop = $('.detail-for-remind').offset().top;
+		if (winPos > nodeTop) {
+			$('.tab-menu').addClass('fixed')
+		} else {
+			$('.tab-menu').removeClass('fixed')
+		}
+		checkscroll()
+	});
 </script>

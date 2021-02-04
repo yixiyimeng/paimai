@@ -209,16 +209,20 @@
 	margin-top: 2px;
 	background-image: url(../img/minus.png);
 }
-.plus-minus-operation a.btn-blue{
+
+.plus-minus-operation a.btn-blue {
 	color: #fff;
 	background: url(../img/add3.png) #29b4ee no-repeat center center;
-	
-}.plus-minus-operation a+a.btn-blue{
+
+}
+
+.plus-minus-operation a+a.btn-blue {
 	color: #fff;
 	background: url(../img/minus2.png) #29b4ee no-repeat center center;
-	
+
 }
-.plus-minus-operation .save-btn{
+
+.plus-minus-operation .save-btn {
 	color: #fff;
 	font-size: 18px;
 	width: 80px;
@@ -229,9 +233,11 @@
 	text-align: center;
 	margin-left: 20px;
 }
-.plus-minus-operation .save-btn.btn-blue{
-	background:#29b4ee ;
+
+.plus-minus-operation .save-btn.btn-blue {
+	background: #29b4ee;
 }
+
 .module-sf .auction-interaction .pm-bid-eye {
 	padding: 20px;
 	background: #fafafa;
@@ -324,18 +330,33 @@
 	margin: 25px 0;
 	position: relative;
 	z-index: 5;
-	border: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
 }
 
 .pm-addition .detail-for-remind {
 	height: 55px;
 	background: #f6f6f6;
-	border-bottom: 1px solid #e6e6e6;
+
+}
+
+.tab-menu.fixed {
+	position: fixed;
+	left: 50%;
+	top: 0;
+	background: #f6f6f6;
+	transform: translateX(-50%);
+	width: 1200px;
+	z-index: 9999;
+
+}
+
+.tab-menu {
+	border: 1px solid #e6e6e6;
 }
 
 .tab-menu li {
 	float: left;
-	height: 55px;
+	height: 53px;
 	font-size: 18px;
 	position: relative;
 	top: 1px;
@@ -346,11 +367,34 @@
 
 .tab-menu li a {
 	display: block;
-	height: 35px;
+	height: 53px;
 	line-height: 35px;
 	padding: 10px 15px;
 	color: #000;
+	box-sizing: border-box;
 	text-decoration: none;
+	position: relative;
+}
+
+.tab-menu li.active a::before {
+	display: block;
+	position: absolute;
+	content: '';
+	top: -2px;
+	left: 0;
+	right: 0;
+	height: 2px;
+	background: #29b4ee;
+}
+
+.tab-menu li a em {
+	color: #29b4ee;
+}
+
+.tab-menu li.active a {
+	color: #29b4ee;
+	background: #fff;
+
 }
 
 .tab-menu li.qrCode-tab {
@@ -365,7 +409,10 @@
 .tab-menu li.qrCode-tab img {
 	vertical-align: middle;
 }
-
+.detail-for-remind+div{
+	border-left: 1px solid #e6e6e6;
+	border-right: 1px solid #e6e6e6;
+}
 .detail-main {
 	border-right: 1px solid #eee;
 	padding: 10px 40px 80px;
