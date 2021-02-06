@@ -1,8 +1,150 @@
-.order-info{
+.order-info {
 	border: 1px solid #ddd;
 	margin-top: 20px;
 	padding: 30px;
-}.order-info .pm-info{
+}
+
+.order-info .title {
+	color: #333;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.order-info .pm-info {
 	background: #f8f8f8;
-	padding: 10px 20px;
+	padding: 0 20px;
+	max-height: 192px;
+	overflow: auto;
+	font-size: 14px;
+	color: #333;
+	font-weight: bold;
+}
+
+.order-info .pm-info .pm-info-item {
+	padding: 20px 0;
+
+}
+
+.order-info .pm-info .pm-info-item+.pm-info-item {
+	border-top: 1px solid #eee;
+}
+
+.order-info .pm-info .pm-info-item .imgbox {
+	width: 80px;
+	margin-right: 20px;
+}
+
+.order-info .pm-info-title {
+	color: #333;
+	font-weight: bold;
+}
+
+.order-info .pm-info-title .price {
+	font-size: 24px;
+	color: #29b4ee;
+	font-weight: bold;
+	margin-right: 20px;
+}
+
+.pm-info-tip {
+	color: #999;
+	font-size: 12px;
+	padding-left: 27px;
+	line-height: 24px;
+	background: url(../img/tip.png) no-repeat left 2px;
+}
+
+.form-info .form-group label {
+	display: block;
+	width: 135px;
+	font-weight: bold;
+	color: #999;
+	line-height: 30px;
+}
+
+.form-info .form-group input[type=text] {
+	width: 370px;
+	height: 30px;
+	border: 1px solid #eee;
+	color: #333;
+	padding-left: 10px;
+	font-size: 14px;
+}
+
+.form-info .form-group .upload {
+	height: 100px;
+	width: 180px;
+	background: #f6f6f6;
+	position: relative;
+	color: #999;
+	overflow: hidden;
+	text-align: center;
+}
+
+.form-info .form-group .upload .upload-icon img {
+	display: block;
+	margin: 0 auto 8px;
+}
+
+.form-info .form-group .upload input[type=file] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 400px;
+	opacity: 0;
+}
+
+.form-info .form-info-tip {
+	color: #333;
+	font-size: 12px;
+	margin-top: 30px;
+}
+
+.agreement {
+	color: #333;
+	font-size: 12px;
+	line-height: 26px;
+}
+
+.agreement a {
+	color: #29b4ee;
+}
+
+.agreement .check {
+	padding-left: 27px;
+	font-size: 14px;
+	background: url(../img/unchecked.png) no-repeat left 4px;
+}
+
+.agreement .check>p:first-child {
+	font-weight: bold;
+}
+
+.agreement .check a {
+	text-decoration: underline;
+}
+
+.order-money {
+	color: #333;
+	font-weight: bold;
+	line-height: 36px;
+	margin-top: 50px;
+}
+
+.order-money em {
+	color: #29b4ee;
+	font-size: 36px;
+}
+
+.order-money a {
+	display: block;
+	color: #fff;
+	background: #29b4ee;
+	width: 160px;
+	line-height: 50px;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 18px;
+	margin: 20px 0 70px 0;
+	float: right;
 }

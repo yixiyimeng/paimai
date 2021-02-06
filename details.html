@@ -549,12 +549,12 @@
 		obj.init();
 	});
 	$('.plus-minus-operation a.plus.btn-blue').click(function() {
-		let val = $('.plus-minus-operation input').val().replace(',', '');
+		var val = $('.plus-minus-operation input').val().replace(',', '');
 		if (val.length > 0) {
 			val = val - 0;
 		}
-		let rang = $('.plus-minus-operation input').attr('data-range') - 0;
-		let max = $('.plus-minus-operation input').attr('data-max') - 0;
+		var rang = $('.plus-minus-operation input').attr('data-range') - 0;
+		var max = $('.plus-minus-operation input').attr('data-max') - 0;
 		if (val + rang > max) {
 			val = max
 		} else {
@@ -563,13 +563,13 @@
 		$('.plus-minus-operation input').val(toThousands(val))
 	});
 	$('.plus-minus-operation a.minus.btn-blue').click(function() {
-		let val = $('.plus-minus-operation input').val().replace(',', '');
+		var val = $('.plus-minus-operation input').val().replace(',', '');
 		if (val.length > 0) {
 			val = val - 0;
 		}
-		let rang = $('.plus-minus-operation input').attr('data-range') - 0;
-		let max = $('.plus-minus-operation input').attr('data-max') - 0;
-		let min = $('.plus-minus-operation input').attr('data-min') - 0;
+		var rang = $('.plus-minus-operation input').attr('data-range') - 0;
+		var max = $('.plus-minus-operation input').attr('data-max') - 0;
+		var min = $('.plus-minus-operation input').attr('data-min') - 0;
 		if (val - rang < min) {
 			val = min;
 
@@ -613,7 +613,7 @@
 		//因为就是秒数  所以取得余数即可
 		var oSeconds = parseInt(countDown % 60);
 		//下面就是插入到页面事先准备容器即可;
-		let haoscend = parseInt((endTime.getTime() - startTime.getTime()) % 1000 / 100)
+		var haoscend = parseInt((endTime.getTime() - startTime.getTime()) % 1000 / 100)
 		var html = "<var>" + p(oDay) + "</var><em>天</em><var>" + p(oHours) +
 			"</var><em>时</em><var>" + p(oMinutes) +
 			"</var><em>分</em><var>" + p(oSeconds) + "</var><em>秒</em>"
@@ -637,7 +637,7 @@
 	$('.modal .close,.modal .cancel').click(function() {
 		$(this).parents('.modal').removeClass('show')
 	});
-	let flag = false;
+	var flag = false;
 	/* 详情tab切换 */
 	$('.tab-menu li').click(function() {
 		var index = $(this).index();
