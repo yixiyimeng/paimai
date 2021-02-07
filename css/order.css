@@ -113,9 +113,12 @@
 .agreement .check {
 	padding-left: 27px;
 	font-size: 14px;
+	cursor: pointer;
 	background: url(../img/unchecked.png) no-repeat left 4px;
 }
-
+.agreement .check.active{
+	background-image: url(../img/checked.png);
+}
 .agreement .check>p:first-child {
 	font-weight: bold;
 }
@@ -129,6 +132,7 @@
 	font-weight: bold;
 	line-height: 36px;
 	margin-top: 50px;
+	
 }
 
 .order-money em {
