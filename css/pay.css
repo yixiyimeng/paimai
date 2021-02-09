@@ -1,0 +1,646 @@
+.steps {
+	background: #f8f8f8;
+	padding: 30px 50px;
+}
+
+.steps .step-item {
+	color: #fff;
+	background: #29b4ee;
+	height: 60px;
+	width: 60px;
+	border-radius: 100%;
+	line-height: 18px;
+	padding-top: 12px;
+	text-align: center;
+	position: relative;
+	border: 1px solid #29b4ee;
+}
+
+.steps .step-item.flex {
+	padding-top: 0;
+}
+
+.steps .step-item:not(:first-child)::before {
+	display: block;
+	content: '';
+	position: absolute;
+	width: 102px;
+	border-bottom: 2px dashed #29b4ee;
+	top: 50%;
+	left: -110px;
+
+}
+
+.steps .step-item+.step-item {
+	margin-left: 118px;
+}
+
+.steps .step-item.step-item-current~.step-item {
+	background: none;
+	color: #bde4f5;
+	border-color: #bde4f5;
+}
+
+.steps .step-item.step-item-current~.step-item::before {
+	border-bottom-color: #bde4f5;
+}
+
+.steps-state {
+	color: #333;
+	font-size: 24px;
+	margin: 30px 0 35px;
+}
+
+/* 时间轴 */
+.timeline {
+	color: #333;
+}
+
+.timeline .timeline-item {
+	padding-bottom: 25px;
+	position: relative;
+	padding-left: 20px;
+	line-height: 18px;
+}
+
+.timeline .timeline-item::before,
+.timeline .timeline-item:not(:last-child)::after {
+	display: block;
+	content: '';
+	position: absolute;
+
+}
+
+.timeline .timeline-item::before {
+	height: 11px;
+	width: 11px;
+	border-radius: 100%;
+	background: #ddd;
+	left: 0;
+}
+
+.timeline .timeline-item::after {
+	top: 10px;
+	bottom: 0;
+	width: 1px;
+	background: #ddd;
+	left: 5px;
+}
+
+.timeline .timeline-item .time {
+	width: 157px;
+}
+
+.timeline .timeline-item span,
+.timeline .timeline-item a {
+	vertical-align: middle;
+}
+
+.timeline .timeline-item:first-child {
+	color: #29b4ee;
+}
+
+.timeline .timeline-item:first-child::before {
+	background: #29b4ee;
+}
+
+.radio,
+.check {
+	cursor: pointer;
+}
+
+.radio input[type=radio],
+.check input[type=checkbox] {
+	display: none;
+}
+
+.radio .radio-inner,
+.check .check-inner {
+	display: inline-block;
+	height: 18px;
+	width: 18px;
+	vertical-align: middle;
+	background: url(../img/unchecked.png) no-repeat;
+}
+
+.radio input[type=radio]:checked+.radio-inner,
+.check input[type=checkbox]:checked+.check-inner {
+	background-image: url(../img/checked.png)
+}
+
+.submit-btn {
+	color: #fff;
+	background: #29b4ee;
+	width: 40px;
+	height: 24px;
+	display: inline-block;
+	text-align: center;
+	line-height: 24px;
+	border-radius: 2px;
+}
+
+.upload {
+	color: #ccc;
+	text-align: center;
+	width: 80px;
+	height: 80px;
+	border: 1px solid #ddd;
+	position: relative;
+	padding-top: 11px;
+	overflow: hidden;
+}
+
+.upload input {
+	position: absolute;
+	font-size: 400px;
+	right: 0;
+	top: 0;
+	opacity: 0;
+}
+
+.upload+.submit-btn {
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.service a {
+	display: inline-block;
+	color: #29b4ee;
+	border: 1px solid #29b4ee;
+	width: 120px;
+	line-height: 34px;
+	border-radius: 4px;
+	text-align: center;
+}
+
+.service a.active {
+	color: #fff;
+	background: #29b4ee;
+}
+
+.service a+a {
+	margin-left: 8px;
+}
+
+.title {
+	color: #333;
+	font-weight: bold;
+	margin-top: 30px;
+}
+
+.addrlist {
+	max-height: 100px;
+	overflow: auto;
+	padding-right: 70px;
+}
+
+.addrlist .addr-item {
+	color: #666;
+	height: 30px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+
+.addrlist .addr-item>span:first-child {
+	width: 120px;
+	display: block;
+	line-height: 30px;
+	height: 30px;
+	text-align: center;
+	color: #666;
+	border: 1px solid #ddd;
+	margin-right: 20px;
+	background: #fff;
+}
+
+.addrlist .addr-item .btn {
+	margin-left: 30px;
+	text-align: right;
+	width: 210px;
+}
+
+.addrlist .addr-item .btn a {
+	color: #29b4ee;
+	display: none;
+}
+
+.addrlist .addr-item .btn a+a {
+	margin-left: 28px;
+}
+
+.addrlist .addr-item+.addr-item {
+	margin-top: 10px;
+}
+
+.addrlist .addr-item:hover {
+	background: #f8f8f8;
+}
+
+.addrlist .addr-item:hover .btn a {
+	display: inline-block;
+}
+
+.addrlist .addr-item.active>span:first-child {
+	border: 2px solid #29b4ee;
+	position: relative;
+}
+
+.addrlist .addr-item.active>span:first-child::before {
+	content: '';
+	display: block;
+	width: 16px;
+	height: 14px;
+	background: url(../img/tag.png) no-repeat center center;
+	position: absolute;
+	right: -2px;
+	bottom: 0;
+}
+
+.addrlist .addr-item .state {
+	color: #fff;
+	display: block;
+	width: 62px;
+	height: 20px;
+	background: #999;
+	text-align: center;
+	line-height: 20px;
+}
+
+.addrlist .addr-item span {
+	display: block;
+}
+
+/* 新增地址 */
+.add-addr .add-btn {
+	width: 108px;
+	line-height: 30px;
+	border: 1px solid #29b4ee;
+	color: #29b4ee;
+	border-radius: 4px;
+	padding-left: 35px;
+	background: url(../img/add5.png) 14px center no-repeat;
+}
+
+.add-addr .form-group label {
+	color: #999;
+	font-weight: bold;
+	margin-right: 20px;
+	line-height: 30px;
+	margin-left: 30px;
+	width: 70px;
+}
+
+.add-addr .form-group input,
+.add-addr .form-group select {
+	border: 1px solid #eee;
+	height: 30px;
+	padding-left: 10px;
+}
+
+.add-addr .form-group input {
+	width: 370px;
+}
+
+.add-addr .form-group select {
+	width: 110px;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	background: url(../img/arrow3.png) no-repeat 90px center;
+}
+
+.add-addr .form-group .line {
+	height: 1px;
+	width: 8px;
+	background: #999;
+	margin: 0 6px;
+}
+
+.add-addr .form-group .btn-list a {
+	width: 80px;
+	height: 36px;
+	border: 1px solid #29b4ee;
+	color: #29b4ee;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 36px;
+	display: inline-block;
+}
+
+.msg {
+	font-size: 12px;
+	color: #29b4ee;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+
+/* 订单信息 */
+.order-info .order-info-hd {
+	border-bottom: 2px solid #29b4ee;
+	padding-bottom: 10px;
+	color: #333;
+	padding-right: 56px;
+	text-align: center;
+}
+
+.order-info .order-info-bd {
+	text-align: center;
+}
+
+.order-info .order-info-hd>span,
+.order-info .order-info-bd>div>span {
+	width: 210px;
+}
+
+.order-info .order-info-hd>span:nth-child(3) {
+	text-align: left;
+	padding-left: 36px;
+	margin-left: 70px;
+}
+
+.order-info .order-info-bd>div>span:nth-child(3) {
+	margin-left: 70px;
+	text-align: left;
+}
+
+.order-info .order-info-hd>span:last-child,
+.order-info .order-info-bd>div>span:last-child {
+	width: 100px;
+	text-align: right;
+}
+
+.order-info .order-info-bd>div {
+	padding: 20px 56px 20px 20px;
+	border-top: 1px solid #fff;
+}
+
+.order-info .order-info-bd .car-info {
+	padding-right: 140px;
+	line-height: 24px;
+	text-align: left;
+}
+
+.order-info .order-info-bd .car-info .imgbox {
+	width: 70px;
+	margin-right: 20px;
+}
+
+.price {
+	color: #29b4ee;
+	font-weight: bold;
+}
+
+.plus-minus-operation a {
+	display: block;
+	height: 30px;
+	width: 30px;
+	border: 1px solid #ddd;
+	font-size: 20px;
+	line-height: 26px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.plus-minus-operation a.disable {
+	color: #ccc;
+}
+
+.plus-minus-operation input {
+	border: 1px solid #ddd;
+	height: 30px;
+	width: 40px;
+	margin: 0 2px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.order-info .order-info-bd>div:first-child {
+	background: #fff;
+	border-bottom: 1px solid #eee;
+}
+
+.order-info .order-info-bd>div {
+	background: #f8f8f8;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.selector {
+	position: relative;
+}
+
+.selector .selected {
+	width: 140px;
+	height: 30px;
+	background: #fff url(../img/arrow3.png) no-repeat 120px center;
+	border: 1px solid #ddd;
+	line-height: 30px;
+	padding-left: 10px;
+	font-size: 12px;
+	color: #666;
+	cursor: pointer;
+}
+
+.selector .option {
+	position: absolute;
+	left: 0;
+	top: 29px;
+	border: 1px solid #ddd;
+	background-color: #fff;
+	width: 140px;
+	padding: 20px 0 20px;
+	color: #666;
+	font-size: 14px;
+	display: none;
+}
+
+.selector .option li {
+	cursor: pointer;
+	padding-left: 20px;
+}
+
+.selector .option li.active {
+	background: url(../img/gou.png) 4px center no-repeat;
+}
+
+.selector .option li+li {
+	margin-top: 20px;
+}
+
+.order-info-ft {
+	text-align: right;
+	padding-top: 25px;
+	padding-right: 56px;
+}
+
+.price.lg-price {
+	font-size: 24px;
+}
+
+.pay-btn {
+	color: #fff;
+	background: #29b4ee;
+	width: 90px;
+	line-height: 36px;
+	border-radius: 4px;
+	display: inline-block;
+	text-align: center;
+}
+
+.order-info-ft .pay-btn {
+	width: 136px;
+}
+
+/* 收银台 */
+.cashier-title {
+	color: #333;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 24px;
+}
+
+.cashier-title .help {
+	font-weight: normal;
+	color: #29b4ee;
+	font-size: 14px;
+	cursor: pointer;
+	margin-left: 10px;
+	padding-right: 20px;
+	background: url(../img/help2.png) right center no-repeat;
+}
+
+.pay-way .weixin,
+.pay-way .airpay {
+	display: block;
+	width: 120px;
+	height: 36px;
+	border: 1px solid #ddd;
+	background: no-repeat center center;
+}
+
+.pay-way .weixin {
+	background-image: url(../img/wx.png);
+}
+
+.pay-way .airpay {
+	background-image: url(../img/airpay.png);
+}
+
+.pay-way .weixin.active,
+.pay-way .airpay.active {
+	position: relative;
+	border: 2px solid #29b4ee;
+}
+
+.pay-way .weixin.active::before,
+.pay-way .airpay.active::before {
+	display: block;
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 14px;
+	background: url(../img/tag.png);
+	right: -1px;
+	bottom: -1px;
+}
+
+.red-msg {
+	color: #ff0000;
+	font-size: 12px;
+	margin: 18px 0;
+}
+
+.table {
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px solid #eee;
+	table-layout: fixed;
+	text-align: center;
+}
+
+.table tr td,
+.table tr th {
+	border: 1px solid #eee;
+}
+
+.table tr th {
+	height: 40px;
+}
+
+.table tr td {
+	padding: 10px 0;
+}
+
+.table select,
+.table .txt {
+	width: 200px;
+	height: 36px;
+	padding-left: 10px;
+	background: #f3f3f3 no-repeat 180px center;
+
+}
+
+.table select {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border: none;
+	background-image: url(../img/arrow3.png)
+}
+
+.table .txt {
+	margin: 0 auto;
+	line-height: 36px;
+	color: #29b4ee;
+}
+
+.table .txt input {
+	border: none;
+	font-weight: bold;
+	background: none;
+	color: #29b4ee;
+	font-size: 14px;
+	margin-left: 5px;
+}
+
+.table .form-info .form-group label {
+	display: inline-block;
+	width: 5em;
+	text-align: right;
+}
+
+.table .form-info .form-group input {
+	width: 220px;
+	height: 30px;
+	border: 1px solid #ddd;
+	padding-left: 10px;
+}
+
+.table .agreement {
+	text-align: right;
+	padding: 20px 0;
+}
+
+.table.history tbody {
+	display: block;
+	max-height: 280px;
+	width: 1200px;
+	overflow-y: auto;
+	text-align: center;
+}
+
+.table.history thead,
+.table.history tbody tr {
+	display: table;
+	width: 1200px;
+	table-layout: fixed;
+}
+
+.table.history tbody tr td {
+	padding: 20px 0;
+}
+
+.table.history .img {
+	width: 80px;
+}
