@@ -1,0 +1,216 @@
+.sf-pai-item-list {
+	padding: .2rem .2rem .3rem;
+}
+
+.sf-pai-item-list .pai-item {
+	border: 1px solid #eaeaea;
+	display: block;
+	position: relative;
+	width: 3.43rem;
+	font-size: .22rem;
+	margin-bottom: .2rem;
+}
+
+.sf-pai-item-list .pai-item:hover {
+	border-color: #29b4ee;
+	outline: 2px solid #29b4ee;
+	text-decoration: none
+}
+
+.sf-pai-item-list .pai-item .header-section {
+	position: relative;
+	overflow: hidden;
+}
+
+.sf-pai-item-list .pai-item .header-section img {
+	display: block;
+	width: 100%;
+	height: 2.18rem;
+}
+
+
+.sf-pai-item-list .pai-item .header-section .title {
+	background-color: #f6f6f6;
+	color: #333;
+	padding: .08rem .1rem;
+	height: .76rem;
+	line-height: .3rem;
+	font-size: .26rem;
+	text-align: left
+}
+
+.sf-pai-item-list .pai-item .info-section {
+	color: #999;
+	padding: .18rem .1rem;
+}
+
+.sf-pai-item-list .pai-item .info-section .label {
+	margin-right: .12rem;
+}
+
+.sf-pai-item-list .pai-item .info-section>p+p {
+	margin-top: .14rem;
+}
+
+.sf-pai-item-list .pai-item .info-section .price.price-assess .value {
+	font-size: .26rem;
+}
+
+.sf-pai-item-list .pai-item .info-section .price.price-assess .value .currency {
+	font-family: arial, tahoma, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+	font-weight: 400;
+	font-size: .26rem;
+	padding-right: .04rem;
+}
+
+.sf-pai-item-list .pai-item .info-section .price.price-assess .value em {
+	font-weight: bold;
+	font-family: tahoma, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+}
+
+.sf-pai-item-list .pai-item .info-section .price .value em s {
+	font-family: 'Microsoft YaHei', arial tahoma, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+	padding-left: 4px;
+	text-decoration: none;
+}
+
+.sf-pai-item-list .pai-item .info-section .time .value {
+	font-family: tahoma, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+	color: #333;
+	/* padding-left: 10px; */
+	font-weight: 700;
+}
+
+.sf-pai-item-list .pai-item .footer-section {
+	border-top: 1px solid #eee;
+	height: .45rem;
+	line-height: .45rem;
+}
+
+.sf-pai-item-list .pai-item .footer-section .num-apply,
+.sf-pai-item-list .pai-item .footer-section .num-auction {
+	float: left;
+	width: 50%;
+	color: #999;
+	text-align: center;
+}
+
+.sf-pai-item-list .pai-item .footer-section .num-auction {
+	border-right: 1px solid #eee;
+}
+
+.sf-pai-item-list .pai-item .flag-section {
+	height: .9rem;
+	width: .9rem;
+	background: rgba(255, 255, 255, .8);
+	position: absolute;
+	right: .1rem;
+	top: 1.2rem;
+	border-radius: 100%;
+	padding: .05rem;
+}
+
+.sf-pai-item-list .pai-item .flag-section .flag {
+	border: 1px solid #666;
+	border-radius: 100%;
+	line-height: .78rem;
+	color: #666;
+	text-align: center;
+
+}
+
+.sf-pai-item-list .pai-item .tag-section p {
+	float: left;
+	width: 50%;
+	height: .44rem;
+	line-height: .44rem;
+	color: #fff;
+	text-align: center;
+	background: #ddd;
+}
+
+.sf-pai-item-list .pai-item .tag-section p+p {
+	border-left: 1px solid #eee;
+}
+
+.sf-pai-item-list .pai-item .tag-section p.btn-blue {
+	background: #29b4ee;
+}
+
+.sf-pai-item-list .pai-item .tag-section p.btn-yellow {
+	background: #f6ad1e;
+}
+
+.more {
+	font-size: .22rem;
+	color: #999;
+	display: block;
+	width: 1.4rem;
+	line-height: .4rem;
+	border-radius: 1rem;
+	border: 1px solid #eaeaea;
+	margin: 0 auto .5rem;
+	text-align: center;
+}
+
+/* 入驻机构 */
+.organization .title {
+	color: #fff;
+	font-size: .28rem;
+	font-weight: bold;
+	background: #29b4ee;
+	padding: 0 .2rem;
+	line-height: .6rem;
+}
+
+.organization .org-tab {
+	padding: 0 .2rem;
+	line-height: .9rem;
+	position: relative;
+}
+
+.organization .org-tab::after,
+.organization .org-tab span.active::after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	height: 1px;
+	left: 0;
+	right: 0;
+	background: #e6e6e6;
+	transform: scaleY(.5);
+}
+
+.organization .org-tab span {
+	padding: 0 .15rem;
+	margin: 0 .6rem;
+	position: relative;
+}
+
+.organization .org-tab span.active {
+	color: #29b4ee;
+}
+
+.organization .org-tab span.active::after {
+	background: #29b4ee;
+}
+
+.organization .org-panel {
+	padding: .2rem;
+}
+.organization .orglist a,
+.organization .orglist i{
+	width: 2.24rem;display: block;
+}
+.organization .orglist a {
+	height: .77rem;
+	overflow: hidden;
+	
+	border: 1px solid #e6e6e6;
+}
+
+.organization .orglist a img {
+	display: block;
+	width: 100%;
+}

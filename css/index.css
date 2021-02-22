@@ -238,6 +238,7 @@
 
 .sf-pai-item-list .pai-item .header-section img {
 	display: block;
+	width: 100%;
 }
 
 .sf-pai-item-list .pai-item .header-section .title {
