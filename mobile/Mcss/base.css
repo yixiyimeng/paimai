@@ -1,3 +1,7 @@
+body.modal-open {
+	position: fixed;
+	width: 100%;
+}
 
 .text-green {
 	color: #19aa6b;
@@ -41,66 +45,70 @@
 	width: 100%;
 }
 
-.searchbar {
-	background: #29b4ee;
-	padding: .14rem .2rem;
+.copyright {
+	text-align: center;
+	color: #999;
+	font-size: .18rem;
+	padding: 0 .46rem .4rem;
+	line-height: .26rem;
+
 }
 
-.searchbar>div {
-	background: #fff;
-	border-radius: 1rem;
-	height: .6rem;
-	padding: 0 .26rem;
+.tabbarH {
+	height: 1.1rem;
 }
 
-.searchbar>div img {
-	width: .26rem;
-	margin-right: .15rem;
-	display: block;
-}
-
-.searchbar>div input {
-	border: none;
-}
-
-.filterbar {
-	border-bottom: 1px solid #eaeaea;
-	height: .9rem;
-	padding: 0 .2rem;
-}
-
-.filterbar>span {
-	padding-left: .15rem;
-	color: #666;
-	font-size: .28rem;
-}
-
-.filterbar>span.filter-item-sort {
-	padding-right: .26rem;
-	background: url(../../img/filter/arrow.png) no-repeat center right;
-	background-size: .16rem auto;
-}
-.filterbar>span.filter-item-sort.filter-item-desc{
-	background-image: url(../../img/filter/desc.png);
-}
-.filterbar>span.filter-item-sort.filter-item-asc{
-	background-image: url(../../img/filter/asc.png);
-}
-.filterbar>span.filter-item-filter {
-	padding-right: .32rem;
-	background: url(../../img/filter/filter.png) no-repeat center right;
-	background-size: .28rem auto;
-	position: relative;
-}
-
-.filterbar>span.filter-item-filter::before {
-	content: '';
-	width: 1px;
-	height: .4rem;
-	background: #eaeaea;
-	display: block;
-	position: absolute;
+.tabbar {
+	position: fixed;
+	bottom: 0;
 	left: 0;
-	top: 50%;
-	transform: translateY(-50%);
+	right: 0;
+	background: #fff;
+	z-index: 999;
+	height: 1.1rem;
+	border-top: 1px solid #ccc;
+}
+
+.tabbar a {
+	text-align: center;
+	font-size: .2rem;
+	color: #999
+}
+
+.tabbar a.active {
+	color: #29b4ee;
+}
+
+.tabbar a i {
+	display: block;
+	height: .45rem;
+	background: no-repeat center center;
+	margin-bottom: .13rem;
+}
+
+.tabbar a i.icon1 {
+	background-image: url('../../img/tab/tabicon1.png');
+	background-size: auto .44rem;
+}
+
+.tabbar a.active i.icon1 {
+	background-image: url('../../img/tab/cur-tabicon1.png');
+}
+
+.tabbar a i.icon2 {
+	background-image: url('../../img/tab/tabicon2.png');
+	background-size: auto .45rem;
+}
+
+.tabbar a.active i.icon2 {
+	background-image: url('../../img/tab/cur-tabicon2.png');
+}
+
+.tabbar a i.icon3 {
+	background-image: url('../../img/tab/tabicon3.png');
+	background-size: auto .44rem;
+}
+
+.tabbar a.active i.icon3 {
+	background-image: url('../../img/tab/cur-tabicon3.png');
 }
