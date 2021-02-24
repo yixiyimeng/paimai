@@ -8,7 +8,7 @@ body.modal-open {
 }
 
 .text-red {
-	color: #e20100;
+	color: #e20100 !important;
 }
 
 .text-blue {
@@ -37,9 +37,14 @@ body.modal-open {
 
 .ml20 {
 	margin-left: .2rem;
+}.ml30 {
+	margin-left: .3rem;
 }
 .mb30{
 	margin-bottom: .3rem;
+}
+.mb20{
+	margin-bottom: .2rem;
 }
 .solid-bottom {
 	height: 1px;
@@ -55,7 +60,9 @@ body.modal-open {
 .bg-white {
 	background: #fff;
 }
-
+.text-right{
+	text-align: right;
+}
 .m-topnav,
 .m-sub-topnav {
 	position: fixed;

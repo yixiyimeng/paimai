@@ -114,6 +114,7 @@
 .radio,
 .check {
 	cursor: pointer;
+	display: inline-block;
 }
 
 .radio input[type=radio],
@@ -159,7 +160,6 @@
 	overflow: hidden;
 	font-size: .14rem;
 	line-height: 1;
-	margin-left: .35rem;
 }
 
 .upload .addimg {
@@ -196,4 +196,371 @@
 
 .service a+a {
 	margin-left: 8px;
+}
+
+.addrlist {
+	color: #666;
+	font-size: .22rem;
+	line-height: .4rem;
+}
+
+.addrlist .addr-item {
+	padding-left: .13rem;
+	border-bottom: 1px solid #ddd;
+}
+
+.addrlist .addr-item .edit {
+	display: block;
+	height: .4rem;
+	width: .4rem;
+	background: url(../../img/edit.png) no-repeat center center;
+	border: 1px solid #eaeaea;
+	background-size: .3rem auto;
+	margin-left: .2rem;
+}
+
+.addrlist .addr-item .tag {
+	font-size: .16rem;
+	color: #fff;
+	background: #29b4ee;
+	line-height: .22rem;
+	padding: 0 .04rem;
+}
+
+.addrlist .addr-item .btn {
+	font-size: .18rem;
+}
+
+.addrlist .addr-item .btn .btn-default input[type=radio] {
+	transform: scale(.8, .8);
+	vertical-align: -.125em;
+}
+
+.addrlist .addr-item .btn .del {
+	background: url(../../img/del.png) no-repeat left center;
+	background-size: .18rem auto;
+	padding-left: .22rem;
+}
+
+.addrlist .addr-item+.addr-item {
+	margin-top: 10px;
+}
+
+.addrlist .addr-item:hover .btn a {
+	display: inline-block;
+}
+
+.addrlist .addr-item.active>span:first-child {
+	border: 2px solid #29b4ee;
+	position: relative;
+}
+
+.addrlist .addr-item.active>span:first-child::before {
+	content: '';
+	display: block;
+	width: 16px;
+	height: 14px;
+	background: url(../img/tag.png) no-repeat center center;
+	position: absolute;
+	right: -2px;
+	bottom: 0;
+}
+
+.addrlist .addr-item .state {
+	color: #fff;
+	display: block;
+	width: 62px;
+	height: 20px;
+	background: #999;
+	text-align: center;
+	line-height: 20px;
+}
+
+/* 新增地址 */
+.add-addr .add-btn {
+	width: 2.51rem;
+	line-height: .6rem;
+	color: #fff;
+	font-size: .28rem;
+	padding-left: 35px;
+	background: #29b4ee url(../../img/add7.png) .3rem center no-repeat;
+	background-size: .24rem auto;
+	margin-top: .3rem;
+}
+
+.add-addr .form-group label {
+	color: #333;
+	line-height: 30px;
+	width: 1.44rem;
+	font-size: .28rem;
+}
+
+.add-addr .form-group input,
+.add-addr .form-group select {
+	border: 1px solid #eee;
+	height: .6rem;
+	padding-left: .1rem;
+	font-size: .22rem;
+}
+
+.add-addr .form-group input {
+	width: 5.61rem;
+}
+
+.selector {
+	height: .5rem;
+	color: #999;
+	font-size: .22rem;
+	width: 1.77rem;
+	border: 1px solid #eee;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	padding-left: .2rem;
+	background: url(../../img/arrow3.png) no-repeat right .15rem center;
+}
+
+.add-addr .form-group .selector {
+	color: #333;
+
+}
+
+.add-addr .form-group select+select {
+	margin-left: .11rem;
+}
+
+.add-addr .form-group textarea {
+	display: block;
+	width: 100%;
+	border: 1px solid #eee;
+	padding: .1rem;
+	height: 1.54rem;
+}
+
+.add-addr .form-group .btn-list a {
+	width: 1.4rem;
+	height: .6rem;
+	border: 1px solid #29b4ee;
+	color: #29b4ee;
+	border-radius: .08rem;
+	text-align: center;
+	line-height: .6rem;
+	font-size: .28rem;
+	display: inline-block;
+}
+
+.card>.msg {
+	font-size: .22rem;
+	line-height: .4rem;
+}
+
+/* 订单信息 */
+.order-info {
+	border-top: 1px solid #29b4ee;
+	margin-top: -.1rem;
+	padding-top: .18rem;
+}
+
+.order-info .imgbox {
+	width: 1.6rem;
+	margin-right: .3rem;
+}
+
+.order-info .imgbox img {
+	display: block;
+	width: 100%;
+}
+
+.order-info .car-info {
+	color: #333;
+	font-size: .28rem;
+	line-height: .4rem;
+}
+
+.order-info .list-item {
+	color: #666;
+	font-size: .26rem;
+	padding: .2rem 0;
+	border-bottom: 1px solid #eee;
+}
+
+.order-info-ft {
+	padding-top: .4rem;
+	padding-bottom: .2rem;
+	font-size: .28rem;
+}
+
+.order-info-ft .price {
+	font-weight: bold;
+}
+
+.pay-btn {
+	color: #fff;
+	background: #29b4ee;
+	min-width: 1.2rem;
+	line-height: .5rem;
+	border-radius: 0.06rem;
+	display: inline-block;
+	text-align: center;
+	padding: 0 .1rem;
+	font-size: .2rem;
+}
+
+.plus-minus-operation a {
+	display: block;
+	height: .4rem;
+	width: .4rem;
+	border: 1px solid #ddd;
+	font-size: .26rem;
+	line-height: .4rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+.plus-minus-operation a.disable {
+	color: #ccc;
+}
+
+.plus-minus-operation input {
+	border: 1px solid #ddd;
+	height: .4rem;
+	width: .5rem;
+	margin: 0 0.02rem;
+	text-align: center;
+	font-weight: bold;
+	font-size: .18rem;
+}
+
+.card .title .help {
+	color: #f53636;
+	font-size: .18rem;
+	margin-left: .1rem;
+}
+
+.card.cashier {
+	font-size: .22rem;
+	color: #333;
+}
+
+.card.cashier .price {
+	font-weight: bold;
+	font-size: .28rem;
+	color: #29b4ee;
+}
+
+.pay-way .weixin,
+.pay-way .airpay {
+	display: block;
+	width: 1.2rem;
+	height: .5rem;
+	border: 1px solid #ddd;
+	background: no-repeat center center;
+	background-size: contain;
+}
+
+.pay-way .weixin {
+	background-image: url(../../img/wx.png);
+}
+
+.pay-way .airpay {
+	background-image: url(../../img/airpay.png);
+}
+
+.pay-way .weixin.active,
+.pay-way .airpay.active {
+	position: relative;
+	border: 1px solid #29b4ee;
+}
+
+.pay-way .weixin.active::before,
+.pay-way .airpay.active::before {
+	display: block;
+	content: '';
+	position: absolute;
+	width: .19rem;
+	height: .19rem;
+	background: url(../../img/tag.png);
+	background-size: contain;
+	right: -1px;
+	bottom: -1px;
+}
+
+.red-msg {
+	font-size: .16rem;
+}
+
+.card.cashier input {
+	height: .6rem;
+	border: 1px solid #eee;
+	padding-left: .2rem;
+}
+
+.agreement {
+	padding: 0 .15rem;
+	margin: .5rem 0 0;
+}
+.agreement .checklist{
+	margin: 0 -.15rem;
+}
+.agreement .check {
+	margin: .1rem .15rem;
+}
+.table {
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px solid #eee;
+	table-layout: fixed;
+	text-align: center;color: #333;
+	font-size: .22rem;
+}
+
+.table tr td,
+.table tr th {
+	border: 1px solid #eee;
+}
+
+.table tr th {
+	height: .6rem;
+	line-height: .6rem;
+}
+
+.table tr td {
+	padding: 10px 0;
+	vertical-align: middle;
+	line-height: .4rem;
+}
+
+.table.history tbody {
+	display: block;
+	width: 100%;
+	overflow-y: auto;
+	text-align: center;
+}
+
+.table.history thead,
+.table.history tbody tr {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+}
+
+.table.history tbody tr td {
+	padding: .3rem 0;
+
+}
+
+.table.history .img {
+	width: .8rem;
+}
+.account-form-info .form-group label {
+	display: inline-block;
+	width: 5.5em;
+	text-align: right;
+}
+
+ .account-form-info .form-group input {
+	width: 220px;
+	height: 30px;
+	border: 1px solid #ddd;
+	padding-left: 10px;
 }

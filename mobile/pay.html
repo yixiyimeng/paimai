@@ -35,7 +35,7 @@
 						<div>请上传《车辆签收单》</div>
 					</div>
 					<div class="flex flex-align-end mt10">
-						<div class="upload">
+						<div class="upload ml30">
 							<div>
 								<img class="addimg" src="../img/add4.png">
 								<p class="mt10">点击上传</p>
@@ -84,36 +84,278 @@
 		<div class="card bg-white mt10">
 			<div class="title">收货人信息</div>
 			<div class="addrlist">
-				<div class="addr-item active">
-					<div>广东 广州市 白云区 太和镇 <span>家庭</span></div>
+				<div class="addr-item">
+					<div>广东 广州市 白云区 太和镇 <span class="tag">家庭</span></div>
 					<div class="flex flex-pack-justify">
 						<div class="flex-1 flex">
 							<div class="ellipsis ">广州市白云区永平街元下田村二路二巷4号广东 广州市 白云区 太和镇 广州市白云区永平街元下田村二路二巷4号广东 广州市 白云区
 								太和镇广州市白云区永平街元下田村二路二巷4号</div>
 							<span>159****1265</span>
 						</div>
-						<a href="javascript:;">编辑</a>
+						<a href="javascript:;" class="edit"></a>
 					</div>
 					<div class="btn flex flex-pack-justify">
-						<a href="javascript:;">设为默认地址</a>
-						<a href="javascript:;">删除</a>
+						<label class="btn-default">
+							<input name="radio" type="radio">
+							<span>设为默认地址</span>
+						</label>
+						<a href="javascript:;" class="del">删除</a>
 					</div>
 				</div>
-				<div class="addr-item active">
-					<div>广东 广州市 白云区 太和镇 <span>家庭</span></div>
+				<div class="addr-item">
+					<div>广东 广州市 白云区 太和镇 <span class="tag">家庭</span></div>
 					<div class="flex flex-pack-justify">
 						<div class="flex-1 flex">
 							<div class="ellipsis ">广州市白云区永平街元下</div>
 							<span>159****1265</span>
 						</div>
-						<a href="javascript:;">编辑</a>
+						<a href="javascript:;" class="edit"></a>
 					</div>
 					<div class="btn flex flex-pack-justify">
-						<a href="javascript:;">设为默认地址</a>
+						<label class="btn-default">
+							<input name="radio" type="radio">
+							<span>设为默认地址</span>
+						</label>
 						<a href="javascript:;">删除</a>
+					</div>
+				</div>
+				<div class="add-addr">
+					<div class="add-btn">新增地址</div>
+					<div class="form-info mt20">
+						<div class="form-group flex flex-align-center">
+							<label>所在地区：</label>
+							<select name="" class="selector">
+								<option value="">请选择省份</option>
+							</select>
+							<select name="" class="selector">
+								<option value="">请选择城市</option>
+							</select>
+							<select name="" class="selector">
+								<option value="">请选择区</option>
+							</select>
+						</div>
+						<div class="form-group mt30">
+							<label>详细地址：</label>
+							<textarea rows="" cols="" value="东圃二马路">
+
+							</textarea>
+						</div>
+						<div class="form-group mt30 flex">
+							<label>手机号码：</label>
+							<input type="text" name="" id="" value="19850206401" />
+						</div>
+						<div class="form-group mt30 flex">
+							<label>地址别名：</label>
+							<input type="text" name="" id="" value="家庭" />
+						</div>
+						<div class="form-group mt40 flex">
+							<div class="btn-list">
+								<a href="javascript:;">保存</a>
+								<a href="javascript:;" class="ml10">取消</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<div class="card bg-white mt10">
+			<div class="title">确认订单信息</div>
+			<div class="msg text-blue">尾款限2021-01-13 00:00:00前支付完成，否则平台将计算订单滞纳金。</div>
+			<div class="title mt20">店铺信息</div>
+			<div class="order-info">
+				<div class="car-info flex flex-align-start">
+					<div class="imgbox">
+						<img src="../img/demo/7.jpg">
+					</div>
+					<div class="flex-1 ">
+						<div>Jeep-自由侠 2018款 互联大屏版 180T 自动高能版</div>
+						<div class="text-blue">拍卖中</div>
+					</div>
+				</div>
+				<div class="order-info-bd mt40">
+					<div class="order-info-list">
+						<div class="list-item flex flex-align-center flex-pack-justify">
+							<span>购车价</span>
+							<span>54,256</span>
+						</div>
+						<div class="list-item flex flex-align-center flex-pack-justify">
+							<span>数量</span>
+							<div class="plus-minus-operation flex">
+								<a href="javascript:;" class="minus disable">-</a>
+								<input type="text" value="1" />
+								<a href="javascript:;" class="plus">+</a>
+							</div>
+						</div>
+						<div class="list-item flex flex-align-center flex-pack-justify">
+							<span>小计</span>
+							<span class="text-blue">-1200</span>
+						</div>
+						<div class="list-item flex flex-align-center flex-pack-justify">
+							<span>保证金/平台服务押金</span>
+							<span class="text-blue">-1200</span>
+						</div>
+						<div class="list-item flex flex-align-center flex-pack-justify">
+							<span>优惠券</span>
+							<span class="text-blue">1200</span>
+						</div>
+						<div class="list-item flex flex-align-center flex-pack-justify">
+							<span>物流服务费</span>
+							<span class="text-blue">1200</span>
+						</div>
+						<div class="list-item flex flex-align-center flex-pack-justify">
+							<span>解押费</span>
+							<span class="text-blue">1200</span>
+						</div>
+						<div class="list-item flex flex-align-center flex-pack-justify">
+							<span>过户费</span>
+							<span class="text-blue">1200</span>
+						</div>
+						<div class="list-item flex flex-align-center flex-pack-justify">
+							<span>软件服务费</span>
+							<span class="text-blue">1200</span>
+						</div>
+					</div>
+					<div class="order-info-ft flex flex-pack-end flex-align-end flex-v">
+						<div>合计：<span class="price text-blue">￥100,000</span></div>
+						<a class="pay-btn mt20" href="javascript:;">去收银台支付</a>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="card cashier bg-white mt10 cashier">
+			<div class="title">收银台<span class="help">如何支付</span></div>
+			<div class="solid-bottom"></div>
+			<div class="flex flex-align-center mt30 flex-pack-justify">
+				<div>
+					<span>软件服务费：</span>
+					<span class="price">￥20,000 </span>
+				</div>
+				<div class="pay-way flex flex-align-center">
+					<a href="javascript:;" class="weixin active ml30"></a>
+					<a href="javascript:;" class="airpay ml10"></a>
+					<a href="javascript:;" class="pay-btn ml10">去支付</a>
+				</div>
+			</div>
+			<div class="solid-bottom mt30"></div>
+			<div class="mt40">车款：<span class="price">￥20,000</span></div>
+			<div class="mt40">滞纳金：<span class="price">￥20,000</span></div>
+			<div class="mt40">合计：<span class="price">￥21,0000 </span></div>
+			<div class="red-msg mt10 text-red">尊敬的会员，您的订单尾款支付时间已超过支付期限，平台将在您当前订单计算滞纳金！</div>
+			<div class="mt30">支付方式：<select name="" class="selector">
+					<option value="">线上支付</option>
+					<option value="">线上支付</option>
+				</select>
+			</div>
+			<div class="mt30">支付金额：<input type="text" id="" value="" />
+			</div>
+			<div class="mt30 flex flex-align-center">支付方式：<div class="pay-way flex flex-align-center">
+					<a href="javascript:;" class="weixin active"></a>
+					<a href="javascript:;" class="airpay ml10"></a>
+					<a href="javascript:;" class="pay-btn ml10">去支付</a>
+
+				</div>
+			</div>
+			<div class="account-form-info">
+				<div class="form-group mt30 flex flex-align-center">
+					<label>开户行：</label>
+					<input type="text">
+				</div>
+				<div class="form-group mt30 flex flex-align-center">
+					<label>账户名：</label>
+					<input type="text">
+				</div>
+				<div class="form-group mt30 flex flex-align-center">
+					<label>账户：</label>
+					<input type="text">
+				</div>
+				<div class="form-group mt30 flex flex-align-center">
+					<label>支付凭证：</label>
+					<div class="flex flex-align-start">
+						<div class="upload">
+							<div>
+								<img src="../img/add4.png" class="addimg">
+								<p class="mt10">点击上传</p>
+							</div>
+							<input type="file" name="" id="" value="">
+						</div>
+						<a href="javascript:;" class="pay-btn ml10">提交</a>
+					</div>
+				</div>
+			</div>
+			<div class="agreement">
+				<div class="mb20">请认真阅读协议并勾选：</div>
+				<div class="checklist">
+					<label class="check">
+						<input type="checkbox" name="agree" id="" value="" />
+						<span class="check-inner"></span>
+						<span>《竞买公告》</span>
+					</label>
+					<label class="check">
+						<input type="checkbox" name="agree" id="" value="" />
+						<span class="check-inner"></span>
+						<span>《竞买公告》</span>
+					</label>
+					<label class="check">
+						<input type="checkbox" name="agree" id="" value="" />
+						<span class="check-inner"></span>
+						<span>《用户竞买协议》</span>
+					</label>
+					<label class="check">
+						<input type="checkbox" name="agree" id="" value="" />
+						<span class="check-inner"></span>
+						<span>《购买合同》</span>
+					</label>
+				</div>
+			</div>
+			<div class="solid-bottom mt30 mb30"></div>
+			<div class="title">支付状态:</div>
+			<table class="table history">
+				<thead>
+					<tr>
+						<th>日期</th>
+						<th>支付方式</th>
+						<th>支付状态</th>
+						<th>支付凭证</th>
+						<th>支付金额</th>
+					</tr>
+				</thead>
+				<tr>
+					<td>202-1-31 20:28:00</td>
+					<td>微信支付</td>
+					<td>支付成功</td>
+					<td>无</td>
+					<td>￥5,000</td>
+				</tr>
+				<tr>
+					<td>202-1-31 20:28:00</td>
+					<td>微信支付</td>
+					<td>支付成功</td>
+					<td>无</td>
+					<td>￥5,000</td>
+				</tr>
+				<tr>
+					<td>202-1-31 20:28:00</td>
+					<td>微信支付</td>
+					<td>支付成功</td>
+					<td><img src="../img/demo/8.jpg" class="img"></td>
+					<td>￥5,000</td>
+				</tr>
+				<tr>
+					<td>202-1-31 20:28:00</td>
+					<td>微信支付</td>
+					<td>支付成功</td>
+					<td>无</td>
+					<td>￥5,000</td>
+				</tr>
+			</table>
+			<div class="mt30 text-right">
+				已支付尾款：<span class="lg-price price">￥70,000</span>
+			</div>
+			<div class="mt30 text-right">剩余需支付：<span class="text-red price">￥70,000</span></div>
+
+		</div>
+
 	</body>
 </html>
