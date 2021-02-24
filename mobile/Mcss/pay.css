@@ -1,0 +1,197 @@
+.steps {
+	background: #f8f8f8;
+	padding: 1.15rem .3rem .25rem !important;
+}
+
+.steps .step-item {
+	color: #fff;
+	background: #29b4ee;
+	height: .82rem;
+	width: .82rem;
+	border-radius: 100%;
+	line-height: .26rem;
+	text-align: center;
+	position: relative;
+	border: 1px solid #29b4ee;
+	font-size: .22rem;
+}
+
+.steps .step-item.flex {
+	padding-top: 0;
+}
+
+.steps .step-item:not(:first-child)::before {
+	display: block;
+	content: '';
+	position: absolute;
+	width: .4rem;
+	border-bottom: 2px dashed #29b4ee;
+	top: 50%;
+	left: -.55rem;
+
+}
+
+.steps .step-item+.step-item {
+	margin-left: .65rem;
+}
+
+.steps .step-item.step-item-current~.step-item {
+	background: none;
+	color: #bde4f5;
+	border-color: #bde4f5;
+}
+
+.steps .step-item.step-item-current~.step-item::before {
+	border-bottom-color: #bde4f5;
+}
+
+.card {
+	padding: .2rem .3rem;
+}
+
+.card>.title {
+	color: #333;
+	font-size: .3rem;
+	padding-bottom: .3rem;
+}
+
+.steps-state {
+	padding-top: .2rem;
+	
+}
+
+/* 时间轴 */
+.timeline {
+	color: #333;
+	font-size: .2rem;
+}
+
+.timeline .timeline-item {
+	padding-bottom: .25rem;
+	position: relative;
+	padding-left: .4rem;
+	line-height: .3rem;
+}
+
+.timeline .timeline-item::before,
+.timeline .timeline-item:not(:last-child)::after {
+	display: block;
+	content: '';
+	position: absolute;
+
+}
+
+.timeline .timeline-item::before {
+	height: .2rem;
+	width: .2rem;
+	border-radius: 100%;
+	background: #ddd;
+	left: 0;
+}
+
+.timeline .timeline-item::after {
+	top: 10px;
+	bottom: 0;
+	width: 1px;
+	background: #ddd;
+	left: 5px;
+}
+
+
+.timeline .timeline-item span,
+.timeline .timeline-item a {
+	vertical-align: middle;
+}
+
+.timeline .timeline-item:first-child {
+	color: #29b4ee;
+}
+
+.timeline .timeline-item:first-child::before {
+	background: #29b4ee;
+}
+
+.radio,
+.check {
+	cursor: pointer;
+}
+
+.radio input[type=radio],
+.check input[type=checkbox] {
+	display: none;
+}
+
+.radio .radio-inner,
+.check .check-inner {
+	display: inline-block;
+	height: .18rem;
+	width: .18rem;
+	vertical-align: middle;
+	background: url(../../img/unchecked.png) no-repeat;
+	background-size: .18rem auto;
+}
+
+.radio input[type=radio]:checked+.radio-inner,
+.check input[type=checkbox]:checked+.check-inner {
+	background-image: url(../../img/checked.png)
+}
+
+.submit-btn {
+	color: #fff;
+	background: #29b4ee;
+	width: .4rem;
+	height: .24rem;
+	line-height: .24rem;
+	font-size: .14rem;
+	display: inline-block;
+	text-align: center;
+	border-radius: 2px;
+}
+
+.upload {
+	color: #ccc;
+	text-align: center;
+	width: .8rem;
+	height: .8rem;
+	border: 1px solid #ddd;
+	position: relative;
+	padding-top: .11rem;
+	overflow: hidden;
+	font-size: .14rem;
+	line-height: 1;
+	margin-left: .35rem;
+}
+
+.upload .addimg {
+	width: .32rem;
+}
+
+.upload input {
+	position: absolute;
+	font-size: 400px;
+	right: 0;
+	top: 0;
+	opacity: 0;
+}
+.service {
+	padding-bottom: .2rem;
+}
+.service a {
+	display: inline-block;
+	color: #29b4ee;
+	border: 1px solid #29b4ee;
+	width: 2rem;
+	line-height: .6rem;
+	border-radius: .05rem;
+	text-align: center;
+	font-size: .28rem;
+}
+
+.service a.active {
+	color: #fff;
+	background: #29b4ee;
+}
+
+.service a+a {
+	margin-left: 8px;
+}

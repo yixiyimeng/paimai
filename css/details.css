@@ -269,7 +269,7 @@
 .module-sf .auction-interaction .msg .tips {
 	border: 1px solid #ffcc7f;
 	background: #ffffe5 url(../img/msg_bg.png) no-repeat;
-	background-position: 3px -197px;
+	background-size: 14px auto;
 	padding: 2px 15px 2px 23px;
 	font-size: 12px;
 	line-height: 18px;

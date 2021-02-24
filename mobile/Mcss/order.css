@@ -1,0 +1,165 @@
+.order-info {
+	padding-left: .3rem;
+	padding-right: .3rem;
+	border-bottom: 1px solid #eaeaea;
+}
+
+.order-info>.title {
+	color: #333;
+	font-size: .3rem;
+	padding-top: .3rem;
+}
+
+.order-info .pm-info-item {
+	padding: .3rem 0;
+	font-size: .28rem;
+	color: #333;
+	line-height: .4rem;
+}
+
+.order-info .pm-info-item+.pm-info-item {
+	border-top: 1px solid #ddd;
+}
+
+.order-info .pm-info-item .imgbox {
+	width: 1.6rem;
+	margin-right: .3rem;
+}
+
+.order-info .pm-info-item .imgbox img {
+	display: block;
+	width: 100%;
+}
+
+.order-info .msg {
+	margin: 0 -.3rem;
+	padding: .3rem;
+}
+
+.order-info .msg .pm-info-title {
+	color: #333;
+	font-size: .22rem;
+}
+
+.order-info .msg .pm-info-title .price {
+	font-size: .28rem;
+	color: #29b4ee;
+	font-weight: bold;
+	margin: 0 .15rem;
+}
+
+.order-info .pm-info-tip {
+	color: #999;
+	margin-top: .2rem;
+	font-size: .16rem;
+	padding-left: .3rem;
+	line-height: .3rem;
+	background: url(../../img/tip.png) no-repeat left top;
+	background-size: .24rem auto;
+}
+
+.form-info .form-group {
+	color: #333;
+	font-size: .22rem;
+}
+
+.form-info .form-group label {
+	display: block;
+	width: 10em;
+	line-height: .6rem;
+}
+
+.form-info .form-group input[type=text] {
+	width: 2.96rem;
+	height: .6rem;
+	border: 1px solid #ddd;
+	color: #333;
+	padding-left: .3rem;
+
+}
+
+.form-info .form-group .upload {
+	height: 1.43rem;
+	width: 2.57rem;
+	background: #f6f6f6;
+	position: relative;
+	color: #999;
+	overflow: hidden;
+	text-align: center;
+	font-size: .2rem;
+}
+
+.form-info .form-group .upload .upload-icon img {
+	display: block;
+	margin: 0 auto .15rem;
+	width: .61rem;
+}
+
+.form-info .form-group .upload input[type=file] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 400px;
+	opacity: 0;
+}
+
+.form-info .form-info-tip {
+	color: #999;
+	font-size: .16rem;
+	line-height: .3rem;
+	margin-top: .25rem;
+	padding-bottom: .2rem;
+}
+.agreement {
+	color: #333;
+	font-size: .16rem;
+	line-height: .3rem;
+	padding-bottom: .3rem;
+}
+
+.agreement a {
+	color: #29b4ee;
+}
+
+.agreement .check {
+	padding-left: .27rem;
+	cursor: pointer;
+	background: url(../../img/unchecked.png) no-repeat left .02rem;
+	background-size: .18rem auto;
+}
+.agreement .check.active{
+	background-image: url(../../img/checked.png);
+}
+.agreement .check>p:first-child {
+	font-weight: bold;
+}
+
+.agreement .check a {
+	text-decoration: underline;
+}
+
+.order-money {
+	color: #333;
+	font-size: .22rem;
+	padding: .3rem .3rem 1rem;
+	
+}
+
+.order-money em {
+	color: #29b4ee;
+	font-size: .28rem;
+	font-weight: bold;
+}
+
+.order-money a {
+	display: block;
+	color: #fff;
+	background: #29b4ee;
+	width: 1.5rem;
+	line-height: .5rem;
+	border-radius: .05rem;
+	text-align: center;
+	font-size: .2rem;
+	margin: .3rem 0 0 0;
+	float: right;
+}
