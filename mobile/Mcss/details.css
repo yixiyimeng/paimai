@@ -4,6 +4,7 @@
 	font-size: .3rem;
 	color: #404040;
 	position: relative;
+
 }
 
 .card.card-sm {
@@ -33,6 +34,12 @@
 	font-style: normal;
 	font-size: .4rem;
 	color: #29b4ee;
+}
+
+.card .countdown var,
+.card .countdown em {
+	/* vertical-align: middle;
+	line-height: .3rem; */
 }
 
 .card .pm-subscribe {
@@ -124,31 +131,31 @@
 }
 
 .card .msg {
-	width: 2.1rem;
+	width: 2.2rem;
 	height: .9rem;
 	border: 1px solid #ffcc7f;
 	background: #ffffe5;
 	font-size: .18rem;
 	color: #333;
-	line-height: .23rem;
+	line-height: .24rem;
 	margin-left: .03rem;
 	padding: 0 .1rem;
 }
 
 .card .msg .tip {
-	background: url(../../img/msg_bg.png) no-repeat left center;
+	background: url(../../img/msg_bg.png) no-repeat left top;
 	padding-left: .23rem;
-	background-size: .1rem auto;
+	background-size: .15rem auto;
 }
 
 .card .pay_help {
 	font-size: .18rem;
 	color: #333;
 	height: .36rem;
-	line-height: .36rem;
+	line-height: .4rem;
 	background: url(../../img/help.png) no-repeat left center;
 	background-size: .36rem auto;
-	padding-left: .55rem;
+	padding-left: .5rem;
 }
 
 .pm-remind {
@@ -450,9 +457,11 @@
 .org-recommend-area .recommend-list .recommend-card .price-area .price {
 	font-size: .26rem;
 }
-.sub-tabbarH{
+
+.sub-tabbarH {
 	height: 1.2rem;
 }
+
 .sub-tabbar {
 	position: fixed;
 	background: #fff;

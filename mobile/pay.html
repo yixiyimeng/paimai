@@ -12,7 +12,7 @@
 	</head>
 	<body class="bgf4">
 		<div class="m-sub-topnav bg-white flex flex-pack-justify flex-align-center">
-			<a href="javascript:;" class="reback"></a>
+			<a href="javascript:;" class="reback2" onclick="history.go(-1)"></a>
 			<a href="javascript:;" class="order">我的订单</a>
 		</div>
 		<div class="steps flex flex-align-center flex-pack-center">
@@ -85,7 +85,7 @@
 			<div class="title">收货人信息</div>
 			<div class="addrlist">
 				<div class="addr-item">
-					<div>广东 广州市 白云区 太和镇 <span class="tag">家庭</span></div>
+					<div class="flex flex-align-center">广东 广州市 白云区 太和镇 <span class="tag">家庭</span></div>
 					<div class="flex flex-pack-justify">
 						<div class="flex-1 flex">
 							<div class="ellipsis ">广州市白云区永平街元下田村二路二巷4号广东 广州市 白云区 太和镇 广州市白云区永平街元下田村二路二巷4号广东 广州市 白云区
@@ -94,7 +94,7 @@
 						</div>
 						<a href="javascript:;" class="edit"></a>
 					</div>
-					<div class="btn flex flex-pack-justify">
+					<div class="btn flex flex-pack-justify flex-align-center">
 						<label class="btn-default">
 							<input name="radio" type="radio">
 							<span>设为默认地址</span>
@@ -111,12 +111,12 @@
 						</div>
 						<a href="javascript:;" class="edit"></a>
 					</div>
-					<div class="btn flex flex-pack-justify">
+					<div class="btn flex flex-pack-justify flex-align-center">
 						<label class="btn-default">
 							<input name="radio" type="radio">
 							<span>设为默认地址</span>
 						</label>
-						<a href="javascript:;">删除</a>
+						<a href="javascript:;" class="del">删除</a>
 					</div>
 				</div>
 				<div class="add-addr">
@@ -182,7 +182,7 @@
 							<span>数量</span>
 							<div class="plus-minus-operation flex">
 								<a href="javascript:;" class="minus disable">-</a>
-								<input type="text" value="1" />
+								<input type="text" value="1" data-max="10" data-min='1'/>
 								<a href="javascript:;" class="plus">+</a>
 							</div>
 						</div>
@@ -359,3 +359,39 @@
 
 	</body>
 </html>
+<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){
+		$('.plus-minus-operation a.plus').click(function() {
+			var val = $('.plus-minus-operation input').val().replace(',', '');
+			if (val.length > 0) {
+				val = val - 0;
+			}
+			var rang =1;
+			var max = $('.plus-minus-operation input').attr('data-max') - 0;
+			if (val + rang > max) {
+				val = max
+			} else {
+				val = val + rang;
+			}
+			$('.plus-minus-operation input').val(val)
+		});
+		$('.plus-minus-operation a.minus').click(function() {
+			var val = $('.plus-minus-operation input').val().replace(',', '');
+			if (val.length > 0) {
+				val = val - 0;
+			}
+			var rang = 1;
+			var max = $('.plus-minus-operation input').attr('data-max') - 0;
+			var min = $('.plus-minus-operation input').attr('data-min') - 0;
+			if (val - rang < min) {
+				val = min;
+		
+			} else {
+				val = val - rang;
+			}
+		
+			$('.plus-minus-operation input').val(val)
+		});
+	})
+</script>

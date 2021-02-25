@@ -30,11 +30,14 @@
 	padding-left: .15rem;
 	color: #666;
 	font-size: .28rem;
+	line-height: .9rem;
+	display: block;
+	height: 100%;
 }
 
 .filterbar>span.filter-item-sort {
 	padding-right: .26rem;
-	background: url(../../img/filter/arrow.png) no-repeat center right;
+	background: url(../../img/filter/arrow.png) no-repeat top .31rem right;
 	background-size: .16rem auto;
 }
 
@@ -48,7 +51,7 @@
 
 .filterbar>span.filter-item-filter {
 	padding-right: .32rem;
-	background: url(../../img/filter/filter.png) no-repeat center right;
+	background: url(../../img/filter/filter.png) no-repeat top .3rem right;
 	background-size: .28rem auto;
 	position: relative;
 }

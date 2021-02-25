@@ -220,7 +220,7 @@
 						<span>
 							<div class="plus-minus-operation flex">
 								<a href="javascript:;" class="minus disable">-</a>
-								<input type="text" value="1" />
+								<input type="text" value="1" data-max="10" data-min='1' />
 								<a href="javascript:;" class="plus">+</a>
 							</div>
 
@@ -504,8 +504,40 @@
 			$(this).addClass('active').siblings().removeClass('active')
 			$(".option").hide();
 		});
-		$('.pay-way .weixin,.pay-way .airpay').click(function(){
+		$('.pay-way .weixin,.pay-way .airpay').click(function() {
 			$(this).addClass('active').siblings().removeClass('active')
-		})
-	})
+		});
+		$('.plus-minus-operation a.plus').click(function() {
+			var val = $('.plus-minus-operation input').val().replace(',', '');
+			if (val.length > 0) {
+				val = val - 0;
+			}
+			var rang =1;
+			var max = $('.plus-minus-operation input').attr('data-max') - 0;
+			if (val + rang > max) {
+				val = max
+			} else {
+				val = val + rang;
+			}
+			$('.plus-minus-operation input').val(val)
+		});
+		$('.plus-minus-operation a.minus').click(function() {
+			var val = $('.plus-minus-operation input').val().replace(',', '');
+			if (val.length > 0) {
+				val = val - 0;
+			}
+			var rang = 1;
+			var max = $('.plus-minus-operation input').attr('data-max') - 0;
+			var min = $('.plus-minus-operation input').attr('data-min') - 0;
+			if (val - rang < min) {
+				val = min;
+		
+			} else {
+				val = val - rang;
+			}
+		
+			$('.plus-minus-operation input').val(val)
+		});
+	});
+	
 </script>

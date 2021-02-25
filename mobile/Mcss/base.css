@@ -117,7 +117,7 @@ body.modal-open {
 	background-size: .17rem auto;
 }
 
-.m-sub-topnav.bg-white .reback {
+.m-sub-topnav .reback2 {
 	width: .4rem;
 	height: .4rem;
 	background-image: url(../../img/details/reback2.png);
@@ -138,7 +138,7 @@ body.modal-open {
 	width: .4rem;
 	height: 100%;
 	background: url(../../img/details/menu.png) no-repeat center center;
-	background-size: .4rem auto;
+	background-size: .38rem auto;
 }
 
 .m-sub-topnav .menulist {
@@ -192,11 +192,12 @@ body.modal-open {
 }
 
 .swiper-pagination-bullet {
-	width: .2rem;
-	height: .2rem;
+	width: 10px;
+	height: 10px;
 	background: #333;
 	border: 1px solid #fff;
 	opacity: 1;
+	border-radius: 100%;
 }
 
 .swiper-pagination-bullet-active {
