@@ -37,15 +37,20 @@ body.modal-open {
 
 .ml20 {
 	margin-left: .2rem;
-}.ml30 {
+}
+
+.ml30 {
 	margin-left: .3rem;
 }
-.mb30{
+
+.mb30 {
 	margin-bottom: .3rem;
 }
-.mb20{
+
+.mb20 {
 	margin-bottom: .2rem;
 }
+
 .solid-bottom {
 	height: 1px;
 	width: 100%;
@@ -60,9 +65,11 @@ body.modal-open {
 .bg-white {
 	background: #fff;
 }
-.text-right{
+
+.text-right {
 	text-align: right;
 }
+
 .m-topnav,
 .m-sub-topnav {
 	position: fixed;
@@ -110,6 +117,22 @@ body.modal-open {
 	background-size: .17rem auto;
 }
 
+.m-sub-topnav.bg-white .reback {
+	width: .4rem;
+	height: .4rem;
+	background-image: url(../../img/details/reback2.png);
+	background-size: .4rem auto;
+}
+.m-sub-topnav.bg-white .order{
+	font-size: .22rem;
+	color: #fff;
+	display: block;
+	width: 1.5rem;
+	line-height: .5rem;padding-left: .45rem;
+	background: #29b4ee url(../../img/order.png) no-repeat .12rem center;
+	background-size: .19rem auto;
+	border-radius: .04rem;
+}
 .m-sub-topnav .menu {
 	display: block;
 	width: .4rem;
