@@ -377,11 +377,15 @@
 					</div>
 					<div class="sf-filter-row triggle open">
 						<div class="sf-filter-key arrow">上牌地</div>
-						<div class="areabox" style="display: block;">
+						<div class="areabox">
 							<div class=" flex flex-align-start">
 								<div class="province">
 									<span>不限</span>
 									<span class="active">广东</span>
+									<span>北京</span>
+									<span>上海</span>
+									<span>广西</span>
+									<span>浙江</span>
 								</div>
 								<div class="city">
 									<span>全广东</span>
@@ -456,7 +460,7 @@
 					<div class="sf-filter-row triggle">
 						<div class="sf-filter-key arrow">里程</div>
 						<div class="sf-filter-value">
-							<div class=" flex flex-wrap">
+							<div class="flex flex-wrap">
 								<a href="javascript:;" class="tag">不限</a>
 								<a href="javascript:;" class="tag">场外</a>
 								<a href="javascript:;" class="tag">场内</a>
@@ -465,13 +469,14 @@
 					</div>
 				</div>
 				<div class="modal-ft flex flex-align-center">
-					<a href="javascript:;">重置</a>
+					<a href="javascript:;" class="rest">重置</a>
 					<a href="javascript:;" class="flex-1">确认</a>
 				</div>
 			</div>
 		</div>
 	</body>
 </html>
+<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 	var swiper = new Swiper('.banner .swiper-container', {
@@ -479,4 +484,30 @@
 			el: '.swiper-pagination',
 		},
 	});
+	function closeModal(){
+		$('.filter-modal').hide();
+		$('body').removeClass('modal-open');
+	}
+	$(function(){
+		$('.filter-item-filter').click(function(){
+			$('.filter-modal').show();
+			$('body').addClass('modal-open')
+		});
+		$('.filter-modal .sf-filter-value .tag').click(function(){
+			$(this).toggleClass('active').siblings().removeClass('active')
+		});
+		$('.areabox>div>div>span').click(function(){
+			$(this).addClass('active').siblings().removeClass('active')
+		});
+		/* 关闭弹框 */
+		$('.filter-modal').click(function(e){
+			var filterbody = $('.filter-modal>div')
+			if (!filterbody.is(e.target) && filterbody.has(e.target).length === 0) {
+				closeModal()
+			}	
+		});
+		$('.sf-filter-row.triggle .sf-filter-key').on('click',function(){
+			$(this).closest('.sf-filter-row.triggle').toggleClass('open')
+		})
+	})
 </script>

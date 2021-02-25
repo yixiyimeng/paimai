@@ -313,11 +313,13 @@
 	color: #111;
 	overflow: auto;
 }
-.filter-modal .modal-ft{
+
+.filter-modal .modal-ft {
 	border-top: 1px solid #eaeaea;
 	padding: .3rem .2rem;
 }
-.filter-modal .modal-ft a{
+
+.filter-modal .modal-ft a {
 	color: #111;
 	font-size: .22rem;
 	border: 1px solid #d1d1d1;
@@ -328,12 +330,14 @@
 	line-height: .66rem;
 	border-radius: 1rem;
 }
-.filter-modal .modal-ft a+a{
+
+.filter-modal .modal-ft a+a {
 	background: #29b4ee;
 	border-color: #29b4ee;
 	color: #fff;
 	margin-left: .2rem;
 }
+
 .sf-filter-row+.sf-filter-row {
 	margin-top: .35rem;
 }
@@ -402,15 +406,17 @@
 }
 
 .areabox {
-	height: 3.9rem;
+	max-height: 3.9rem;
 	border-top: 1px solid #eaeaea;
 	border-bottom: 1px solid #eaeaea;
 	margin: .35rem -.2rem 0;
+	overflow: hidden;
 }
 
-.areabox>div {
-	height: 100%;
+.areabox>div>div {
+	max-height: 3.9rem;
 	overflow: auto;
+	-webkit-overflow-scrolling: touch;
 }
 
 .areabox span {
@@ -436,6 +442,11 @@
 
 }
 
+.areabox .province span.active {
+	background: #fff;
+	border-right: none;
+}
+
 .areabox .city {
 	width: 1.8rem;
 	margin-left: .1rem;
@@ -447,4 +458,7 @@
 
 .triggle.sf-filter-row .sf-filter-key+div {
 	display: none;
+}
+.triggle.sf-filter-row.open .sf-filter-key+div {
+	display: block;
 }
