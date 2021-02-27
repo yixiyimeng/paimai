@@ -21,7 +21,7 @@
 .login_reg {
 	font-size: 14px;
 	font-family: "微软雅黑";
-	background: url(../images/ico_home.png) no-repeat;
+	background: url(../img/login/ico_home.png) no-repeat;
 	padding-left: 45px;
 	line-height: 35px;
 	height: 35px;
@@ -32,7 +32,7 @@
 .login_home {
 	font-size: 14px;
 	font-family: "微软雅黑";
-	background: url(../images/ico_member.png) no-repeat;
+	background: url(../img/login/ico_member.png) no-repeat;
 	padding-left: 45px;
 	line-height: 35px;
 	height: 35px;

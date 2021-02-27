@@ -59,6 +59,9 @@ a:active{color:#0093ff;text-decoration:none;}
 .visible-lg-inline-block {
   display: none !important;
 }
+body{
+	min-width: 100%;
+}
 @media (max-width: 767px) {
   .visible-xs {
     display: block !important;
@@ -224,7 +227,7 @@ a:active{color:#0093ff;text-decoration:none;}
 .top_nav_3{height:100px;padding-top:12px;}
 .top_nav_xs{width:100%;height:50px;overflow:hidden;border-bottom:1px solid #dddddd;}
 .top_nav_xs .logo_xs{width:73.125%;margin:0 auto;}
-.top_nav_xs .logo_xs img{width:115px;max-height:50px;}
+.top_nav_xs .logo_xs img{width:140px;max-height:50px; margin-top: 5px;}
 .top_nav_xs .ico_menu{width:13.4375%;}
 .top_nav_xs .ico_menu a{padding:12px 12px;display:block;}
 .top_nav_xs .ico_menu img{width:100%;width:26px;}

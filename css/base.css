@@ -275,6 +275,7 @@
 
 .footer .sf-footer {
 	padding: 40px 0 58px;
+	display: flex;
 }
 
 .footer .sf-footer .list-row {
@@ -302,11 +303,22 @@
 	margin: 0 100px;
 }
 
+@media (max-width: 768px) {
+	.footer .sf-footer {
+		display: block;
+	}
+
+	.footer .sf-footer .qrcode {
+		margin:20px 40px;
+	}
+}
+
 .footer .copyright {
 	color: #999;
 	background: #fff;
 	text-align: center;
-	line-height: 48px;
+	height: 48px;
+	line-height: 20px;
 }
 
 
