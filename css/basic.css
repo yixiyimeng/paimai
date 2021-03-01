@@ -4,7 +4,7 @@ html{font-size:20px;}
 html,body,dl,dd,img,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,p{margin:0;padding:0;border:0;}
 *{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;}
 textarea,input[type="submit"],input[type="reset"],input[type="button"],button{-webkit-appearance:none;appearance:none;-moz-appearance:none;}
-select{-webkit-appearance:none;border:solid 1px #ccc;appearance:none;-moz-appearance:none;-webkit-appearance:none;background:url(../images/arrow.png) no-repeat scroll right center transparent;padding-right:16px;}
+select{-webkit-appearance:none;border:solid 1px #ccc;appearance:none;-moz-appearance:none;-webkit-appearance:none;background:url(../img/arrow.png) no-repeat scroll right center transparent;padding-right:16px;}
 a,button,input{-webkit-tap-highlight-color:transparent;-moz-tap-highlight-color:transparent;outline:0;}
 input[type="text"],input[type="password"]{appearance:none;-moz-appearance:none;-webkit-appearance:none;}
 table{border-collapse:collapse;border-spacing:0}
