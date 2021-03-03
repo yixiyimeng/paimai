@@ -57,8 +57,8 @@
 			<div class="container top_nav_3 clearfix hidden-xs hidden-sm">
 				<div class="fl logo_not_xs"><a href="http://test9.szfangwei.net/fangwei_shop2/"><img src="img/logo3.png"></a></div>
 				<div class="fl login_t">会员注册</div>
-				<div class="fr login_home"><a href="http://test9.szfangwei.net/fangwei_shop2/">回到首页</a></div>
-				<div class="fr login_reg"><a href="http://test9.szfangwei.net/fangwei_shop2/Register/index.html?ret=http://test9.szfangwei.net/fangwei_shop2/Register/index.html?ret=http://test9.szfangwei.net/fangwei_shop2/">会员登录</a></div>
+				<div class="fr  login_reg"><a href="http://test9.szfangwei.net/fangwei_shop2/">回到首页</a></div>
+				<div class="fr login_home"><a href="http://test9.szfangwei.net/fangwei_shop2/Register/index.html?ret=http://test9.szfangwei.net/fangwei_shop2/Register/index.html?ret=http://test9.szfangwei.net/fangwei_shop2/">会员登录</a></div>
 			</div>
 		</header>
 		<main class="main-content">
@@ -75,12 +75,18 @@
 					<div class="register_u"><input type="text" name="phone" id="phone" placeholder="邮箱/手机" /></div>
 					<div class="register_p"><input type="password" name="password" id="password" placeholder="密码（6-16位数字、字母和下划线）" /></div>
 					<div class="register_p2"><input type="password" name="password2" id="password2" placeholder="确定密码（6-16位数字、字母和下划线）" /></div>
-					<div class="register_c">
+					<div class="register_u flex flex-align-center">
+						<input type="text" name="phone" id="phone" placeholder="输入手机验证码" class="flex-1"/>
+					&nbsp;<input type="button" value="获取短信验证码" id="get_phone_code" class="getocde" />
+					</div>
+					
+				<div class="register_c">
 						<div class="fl input"><input type="text" name="validate_code" id="validate_code" placeholder="验证码" /></div>
 						<div class="fl pic"><img class="validate" style="cursor:pointer" alt="点击更换" src="" /></div>
 						<div class="fl text">换一张</div>
 						<div class="clear"></div>
 					</div>
+					
 					<div class="register_xieyi"><label><input type="checkbox" value="1" />我已阅读并同意<a href="#">《会员服务协议》</a></label></div>
 					<div class="register_btn"><input type="button" value="确定注册" id="btn_register_phone" /></div>
 					<div class="register_other clearfix">
@@ -117,7 +123,7 @@
 						</div>
 						<div class="form-group mt20 flex flex-align-center">
 							<label>生日：</label>
-							<div>
+							<div class="birthday">
 								<select name="year" id="year" class="sm">
 									<option value="">选择年</option>
 								</select>
@@ -211,10 +217,9 @@
 							<input type="text" name="" id="" value="" />
 						</div>
 					</div>
-
+					<div class="register_btn"><input type="button" value="确定保存" id="btn_register_phone" /></div>
 				</div>
-			</div> <input type="hidden" id="login_url" value="http://test9.szfangwei.net/fangwei_shop2/Register/forget_phone.html" />
-			<div class="gray_bg" id="gray_bg"></div>
+			</div>
 		</main>
 		<!-- footer -->
 		<div class="footer" style="margin-top: 0;">
