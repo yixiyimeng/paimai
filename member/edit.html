@@ -66,19 +66,14 @@
 			<div class="container member clearfix">
 				<div class="member_menu">
 					<ul class="clearfix">
-						<li class="visible-lg hover">会员中心</li>
-						<li id="ico_index"><a href="/fangwei_shop2/Member/index.html">会员首页</a></li>
+						<li id="ico_index" ><a href="/fangwei_shop2/Member/index.html">会员首页</a></li>
 						<li id="ico_info" class="sel"><a href="/fangwei_shop2/Member/edit.html">账户资料</a></li>
 						<li id="ico_addr"><a href="/fangwei_shop2/Member/address.html">收货地址</a></li>
 						<li id="ico_order"><a href="/fangwei_shop2/Member/myorder.html">我的订单</a></li>
-						<li id="ico_comment"><a href="/fangwei_shop2/Member/comment.html">商品评价</a></li>
-						<li id="ico_fav"><a href="/fangwei_shop2/Member/myfav.html">我的收藏</a></li>
-						<li id="ico_youhui"><a href="/fangwei_shop2/Member/youhui.html">优惠劵</a></li>
+						<li id="ico_comment"><a href="/fangwei_shop2/Member/comment.html">保证金</a></li>
+						<li id="ico_fav"><a href="/fangwei_shop2/Member/myfav.html">我的提醒</a></li>
 						<li class="visible-xs"></li>
 					</ul>
-					<script type="text/javascript">
-						$("#ico_info").addClass("sel");
-					</script>
 				</div>
 				<div class="member_right">
 					<div class="right_t"><span class="ico"></span>修改资料</div>
@@ -86,14 +81,19 @@
 						<form name="frm" id="frm" method="post">
 							<table>
 								<tr>
-									<td class="td1">手　　机</td>
+									<td class="td1">头　　像</td>
 									<td class="td2">
-										<div class="fl visible-xs">手机：</div>
-										<div class="text">18666081130</div>
-										<div class="edit"><a href="/fangwei_shop2/Member/change_phone.html">[修改]</a></div>
-										<div class="clear"></div>
+										<div class="fl visible-xs">头像：</div>
+										<div class="upload flex flex-align-center flex-pack-center">
+											<div class="upload-icon">
+												<img src="../img/upload.png">
+												<span>上传头像</span>
+											</div>
+											<input type="file" name="" id="" value="" />
+										</div>
 									</td>
 								</tr>
+
 								<tr>
 									<td class="td1">邮　　箱</td>
 									<td class="td2">
@@ -104,10 +104,11 @@
 									</td>
 								</tr>
 								<tr class="visible-xs tr_phone_t">
-									<td colspan="2">昵称</td>
+									<td colspan="2">姓名</td>
 								</tr>
 								<tr>
-									<td class="td1">昵　　称</td>
+									<td class="td1">姓　　名
+									</td>
 									<td class="td2"><input class="input1" type="text" name="nickname" id="nickname" value="" /></td>
 								</tr>
 								<tr class="visible-xs tr_phone_t">
@@ -399,25 +400,71 @@
 					<div class="member_password">
 						<table>
 							<tr class="visible-xs tr_phone_t">
-								<td colspan="2">输入旧密码</td>
+								<td colspan="2">委托人</td>
 							</tr>
 							<tr>
-								<td class="td1">输入旧密码</td>
+								<td class="td1">委托人</td>
 								<td class="td2"><input class="input1" type="text" id="old_password" name="old_password" /></td>
 							</tr>
 							<tr class="visible-xs tr_phone_t">
-								<td colspan="2">输入新密码</td>
+								<td colspan="2">手机号</td>
 							</tr>
 							<tr>
-								<td class="td1">输入新密码</td>
+								<td class="td1">手机号</td>
 								<td class="td2"><input class="input1" type="text" id="new_password" name="new_password" /></td>
 							</tr>
 							<tr class="visible-xs tr_phone_t">
-								<td colspan="2">重复新密码</td>
+								<td colspan="2">身份证</td>
 							</tr>
 							<tr>
-								<td class="td1">重复新密码</td>
+								<td class="td1">身份证号</td>
 								<td class="td2"><input class="input1" type="text" id="new_password2" name="new_password2" /></td>
+							</tr>
+							<tr class="visible-xs tr_phone_t">
+								<td colspan="2">社会信用代码</td>
+							</tr>
+							<tr>
+								<td class="td1">社会信用代码</td>
+								<td class="td2"><input class="input1" type="text" id="new_password2" name="new_password2" /></td>
+							</tr>
+							<tr class="visible-xs tr_phone_t">
+								<td colspan="2">上传身份证</td>
+							</tr>
+							<tr>
+								<td class="td1">上传身份证</td>
+								<td class="td2">
+									<div class="upload lg fl flex flex-align-center flex-pack-center">
+										<div class="upload-icon">
+											<img src="../img/upload.png">
+											<span>上传身份证正面照片</span>
+										</div>
+										<input type="file" name="" id="" value="">
+									</div>
+									<div class="upload lg fl  flex flex-align-center flex-pack-center">
+										<div class="upload-icon">
+											<img src="../img/upload.png">
+											<span>上传身份证正面照片</span>
+										</div>
+										<input type="file" name="" id="" value="">
+									</div>
+								</td>
+							</tr>
+							<tr class="visible-xs tr_phone_t">
+								<td colspan="2">上传营业执照</td>
+							</tr>
+							<tr>
+								<td class="td1">
+									<span class="mt10">上传营业执照</span>
+								</td>
+								<td class="td2">
+									<div class="upload lg mt10 flex flex-align-center flex-pack-center">
+										<div class="upload-icon">
+											<img src="../img/upload.png">
+											<span>上传营业执照</span>
+										</div>
+										<input type="file" name="" id="" value="">
+									</div>
+								</td>
 							</tr>
 							<tr>
 								<td colspan="2" class="btn"><input type="button" onclick="change_password()" class="button1" value="确定修改" /></td>
@@ -453,7 +500,7 @@
 						<li><a href=""><i>·</i>竞价流程图</a></li>
 					</ul>
 				</div>
-				<div class="qrcode"><img src="img/qr.jpg"></div>
+				<div class="qrcode"><img src="../img/qr.jpg"></div>
 				<div class="list-row flex-1">
 					<h3>支付帮助</h3>
 					<ul>
