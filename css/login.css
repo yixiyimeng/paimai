@@ -149,8 +149,11 @@
 .login_box .login_other a {
 	display: inline-block;
 	margin-right: 10px;
+	width: 30px;
 }
-
+.login_box .login_other a img{
+	width: 30px;
+}
 @media (max-width: 991px) {
 	.login_main {
 		background-color: #fff;
@@ -475,7 +478,9 @@
 	font-size: 14px;
 	color: #666666;
 }
-
+.register_main .register_other a img{
+	width: 30px;
+}
 .register_main .register_other span {
 	display: block;
 	height: 30px;
