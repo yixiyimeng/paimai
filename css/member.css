@@ -49,9 +49,18 @@
 		float: left;
 	}
 
+	.member_menu ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
 	.member_menu li {
-		float: left;
-		width: 25%;
+		/* float: left;
+		width: 25%; */
+		width: auto;
+		padding: 0 20px;
+		flex: auto
 	}
 
 	.member_menu li a {
@@ -78,7 +87,7 @@
 	}
 
 	.member_menu li {
-		padding-left: 70px;
+		padding-left: 50px;
 		text-align: left;
 		width: 200px;
 	}
@@ -96,87 +105,87 @@
 	}
 
 	.member_menu li#ico_index {
-		background: url(../img/member/ico_m_index.png) no-repeat 24px 15px;
+		background: url(../img/member/ico_m_index.png) no-repeat 20px 15px;
 	}
 
 	.member_menu li#ico_index.sel {
-		background: url(../img/member/ico_m_index3.png) no-repeat 24px 15px;
+		background: url(../img/member/ico_m_index3.png) no-repeat 20px 15px;
 	}
 
 	.member_menu li#ico_index:hover {
-		background: url(../img/member/ico_m_index2.png) no-repeat 24px 15px #0091bd;
+		background: url(../img/member/ico_m_index2.png) no-repeat 20px 15px #0091bd;
 	}
 
 	.member_menu li#ico_info {
-		background: url(../img/member/ico_m_info.png) no-repeat 24px 15px;
+		background: url(../img/member/ico_m_info.png) no-repeat 20px 15px;
 	}
 
 	.member_menu li#ico_info.sel {
-		background: url(../img/member/ico_m_info3.png) no-repeat 24px 15px;
+		background: url(../img/member/ico_m_info3.png) no-repeat 20px 15px;
 	}
 
 	.member_menu li#ico_info:hover {
-		background: url(../img/member/ico_m_info2.png) no-repeat 24px 15px #0091bd;
+		background: url(../img/member/ico_m_info2.png) no-repeat 20px 15px #0091bd;
 	}
 
 	.member_menu li#ico_addr {
-		background: url(../img/member/ico_m_addr.png) no-repeat 24px 15px;
+		background: url(../img/member/ico_m_addr.png) no-repeat 20px 15px;
 	}
 
 	.member_menu li#ico_addr.sel {
-		background: url(../img/member/ico_m_addr3.png) no-repeat 24px 15px;
+		background: url(../img/member/ico_m_addr3.png) no-repeat 20px 15px;
 	}
 
 	.member_menu li#ico_addr:hover {
-		background: url(../img/member/ico_m_addr2.png) no-repeat 24px 15px #0091bd;
+		background: url(../img/member/ico_m_addr2.png) no-repeat 20px 15px #0091bd;
 	}
 
 	.member_menu li#ico_order {
-		background: url(../img/member/ico_m_order.png) no-repeat 24px 17px;
+		background: url(../img/member/ico_m_order.png) no-repeat 20px 17px;
 	}
 
 	.member_menu li#ico_order.sel {
-		background: url(../img/member/ico_m_order3.png) no-repeat 24px 17px;
+		background: url(../img/member/ico_m_order3.png) no-repeat 20px 17px;
 	}
 
 	.member_menu li#ico_order:hover {
-		background: url(../img/member/ico_m_order2.png) no-repeat 24px 17px #0091bd;
+		background: url(../img/member/ico_m_order2.png) no-repeat 20px 17px #0091bd;
 	}
 
 	.member_menu li#ico_comment {
-		background: url(../img/member/ico_m_comment.png) no-repeat 24px 17px;
+		background: url(../img/member/ico_m_comment.png) no-repeat 20px 17px;
 	}
 
 	.member_menu li#ico_comment.sel {
-		background: url(../img/member/ico_m_comment3.png) no-repeat 24px 17px;
+		background: url(../img/member/ico_m_comment3.png) no-repeat 20px 17px;
 	}
 
 	.member_menu li#ico_comment:hover {
-		background: url(../img/member/ico_m_comment2.png) no-repeat 24px 15px #0091bd;
+		background: url(../img/member/ico_m_comment2.png) no-repeat 20px 15px #0091bd;
 	}
 
 	.member_menu li#ico_fav {
-		background: url(../img/member/ico_m_fav.png) no-repeat 24px 19px;
+		background: url(../img/member/ico_m_fav.png) no-repeat 20px 19px;
 	}
 
 	.member_menu li#ico_fav.sel {
-		background: url(../img/member/ico_m_fav3.png) no-repeat 24px 19px;
+		background: url(../img/member/ico_m_fav3.png) no-repeat 20px 19px;
 	}
 
 	.member_menu li#ico_fav:hover {
-		background: url(../img/member/ico_m_fav2.png) no-repeat 24px 19px #0091bd;
+		background: url(../img/member/ico_m_fav2.png) no-repeat 20px 19px #0091bd;
 	}
 
 	.member_menu li#ico_youhui {
-		background: url(../img/member/ico_m_youhui.png) no-repeat 24px 17px;
+		background: url(../img/member/ico_m_youhui.png) no-repeat 20px 17px;
 	}
 
 	.member_menu li#ico_youhui.sel {
-		background: url(../img/member/ico_m_youhui3.png) no-repeat 24px 17px;
+		background: url(../img/member/ico_m_youhui3.png) no-repeat 20px 17px;
 	}
 
 	.member_menu li#ico_youhui:hover {
-		background: url(../img/member/ico_m_youhui2.png) no-repeat 24px 17px #0091bd;
+		background: url(../img/member/ico_m_youhui2.png) no-repeat 20px 17px #0091bd;
 	}
 
 	.member_menu li a {

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>支付</title>
+		<script src="../js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="Mcss/Mreset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="Mcss/base.css" />
+		<link rel="stylesheet" type="text/css" href="Mcss/pay.css" />
+	</head>
+	<body class="bgf4">
+		<div class="m-sub-topnav bg-white flex flex-pack-justify flex-align-center">
+			<a href="javascript:;" class="reback2" onclick="history.go(-1)"></a>
+			<a href="javascript:;" class="order">我的订单</a>
+		</div>
+		<div class="card cashier bg-white mt10 cashier">
+			<div class="title">收银台<span class="help">如何支付</span></div>
+			<div class="solid-bottom"></div>
+			<div class="flex flex-align-center mt30 flex-pack-justify">
+				<div>
+					<span>软件服务费：</span>
+					<span class="price">￥20,000 </span>
+				</div>
+				<div class="pay-way flex flex-align-center">
+					<a href="javascript:;" class="weixin active ml30"></a>
+					<a href="javascript:;" class="airpay ml10"></a>
+					<a href="javascript:;" class="pay-btn ml10">去支付</a>
+				</div>
+			</div>
+			<div class="solid-bottom mt30"></div>
+			<div class="mt40">车款：<span class="price">￥20,000</span></div>
+			<div class="mt40">滞纳金：<span class="price">￥20,000</span></div>
+			<div class="mt40">合计：<span class="price">￥21,0000 </span></div>
+			<div class="red-msg mt10 text-red">尊敬的会员，您的订单尾款支付时间已超过支付期限，平台将在您当前订单计算滞纳金！</div>
+			<div class="mt30">支付方式：<select name="" class="selector">
+					<option value="">线上支付</option>
+					<option value="">线上支付</option>
+				</select>
+			</div>
+			<div class="mt30">支付金额：<input type="text" id="" value="" />
+			</div>
+			<div class="mt30 flex flex-align-center">支付方式：<div class="pay-way flex flex-align-center">
+					<a href="javascript:;" class="weixin active"></a>
+					<a href="javascript:;" class="airpay ml10"></a>
+					<a href="javascript:;" class="pay-btn ml10">去支付</a>
+
+				</div>
+			</div>
+			<div class="account-form-info">
+				<div class="form-group mt30 flex flex-align-center">
+					<label>开户行：</label>
+					<input type="text">
+				</div>
+				<div class="form-group mt30 flex flex-align-center">
+					<label>账户名：</label>
+					<input type="text">
+				</div>
+				<div class="form-group mt30 flex flex-align-center">
+					<label>账户：</label>
+					<input type="text">
+				</div>
+				<div class="form-group mt30 flex flex-align-center">
+					<label>支付凭证：</label>
+					<div class="flex flex-align-start">
+						<div class="upload">
+							<div>
+								<img src="../img/add4.png" class="addimg">
+								<p class="mt10">点击上传</p>
+							</div>
+							<input type="file" name="" id="" value="">
+						</div>
+						<a href="javascript:;" class="pay-btn ml10">提交</a>
+					</div>
+				</div>
+			</div>
+			<div class="agreement">
+				<div class="mb20">请认真阅读协议并勾选：</div>
+				<div class="checklist">
+					<label class="check">
+						<input type="checkbox" name="agree" id="" value="" />
+						<span class="check-inner"></span>
+						<span>《竞买公告》</span>
+					</label>
+					<label class="check">
+						<input type="checkbox" name="agree" id="" value="" />
+						<span class="check-inner"></span>
+						<span>《竞买公告》</span>
+					</label>
+					<label class="check">
+						<input type="checkbox" name="agree" id="" value="" />
+						<span class="check-inner"></span>
+						<span>《用户竞买协议》</span>
+					</label>
+					<label class="check">
+						<input type="checkbox" name="agree" id="" value="" />
+						<span class="check-inner"></span>
+						<span>《购买合同》</span>
+					</label>
+				</div>
+			</div>
+			<div class="solid-bottom mt30 mb30"></div>
+			<div class="title">支付状态:</div>
+			<table class="table history">
+				<thead>
+					<tr>
+						<th>日期</th>
+						<th>支付方式</th>
+						<th>支付状态</th>
+						<th>支付凭证</th>
+						<th>支付金额</th>
+					</tr>
+				</thead>
+				<tr>
+					<td>202-1-31 20:28:00</td>
+					<td>微信支付</td>
+					<td>支付成功</td>
+					<td>无</td>
+					<td>￥5,000</td>
+				</tr>
+				<tr>
+					<td>202-1-31 20:28:00</td>
+					<td>微信支付</td>
+					<td>支付成功</td>
+					<td>无</td>
+					<td>￥5,000</td>
+				</tr>
+				<tr>
+					<td>202-1-31 20:28:00</td>
+					<td>微信支付</td>
+					<td>支付成功</td>
+					<td><img src="../img/demo/8.jpg" class="img"></td>
+					<td>￥5,000</td>
+				</tr>
+				<tr>
+					<td>202-1-31 20:28:00</td>
+					<td>微信支付</td>
+					<td>支付成功</td>
+					<td>无</td>
+					<td>￥5,000</td>
+				</tr>
+			</table>
+			<div class="mt30 text-right">
+				已支付尾款：<span class="lg-price price">￥70,000</span>
+			</div>
+			<div class="mt30 text-right">剩余需支付：<span class="text-red price">￥70,000</span></div>
+
+		</div>
+
+	</body>
+</html>
+<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/zoom.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){
+		// #getRecord是img标签的父元素，并不支持委托，所以当你的图片是新增的，需要再次调用以下代码，可以写成一个函数调用
+		$('.history').FlyZommImg({
+		  rollSpeed: 200,//切换速度
+		  miscellaneous: false,//是否显示底部辅助按钮
+		  closeBtn: true,//是否打开右上角关闭按钮
+		  hideClass: 'hideImg',//不需要显示预览的 class
+		  imgQuality: 'thumb',//图片质量类型  thumb 缩略图  original 默认原图
+		  slitherCallback: function (direction, DOM) {//左滑动回调 两个参数 第一个动向 'left,firstClick,close' 第二个 当前操作DOM
+		    setTimeout(function(){
+		       // 为了一开始居中显示
+		      $('.fly-zoom-box-img').css('width','100%').css('height','auto').css('top',0).css('bottom',0).css('margin','auto');
+		    },300)
+		  }
+		});
+	})
+</script>

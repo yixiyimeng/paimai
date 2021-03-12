@@ -280,6 +280,7 @@
 	border-radius: 4px;
 	padding-left: 35px;
 	background: url(../img/add5.png) 14px center no-repeat;
+	cursor: pointer;
 }
 
 .add-addr .form-group label {
@@ -604,6 +605,10 @@
 	margin-left: 5px;
 }
 
+.table .form-info {
+	display: none;
+}
+
 .table .form-info .form-group label {
 	display: inline-block;
 	width: 5em;
@@ -643,4 +648,16 @@
 
 .table.history .img {
 	width: 80px;
+}
+
+.preview>div {
+	height: 60%;
+	width: 60%;
+}
+
+.preview .imgbox {
+	height: 100%;
+	width: 100%;
+	background: no-repeat center center;
+	background-size: contain;
 }

@@ -62,14 +62,7 @@
 		</div>
 		<div class="main-content w1200">
 			<div class="breadcrumbs"><a href="">我的订单</a> <span>></span><span>订单号125420299360</span></div>
-			<div class="steps flex flex-align-center">
-				<div class="step-item">提交<br>订单</div>
-				<div class="step-item">支付<br>尾款</div>
-				<div class="step-item step-item-current">支付<br>完成</div>
-				<div class="step-item">等待<br>交车</div>
-				<div class="step-item flex flex-align-center flex-pack-center">完成</div>
-			</div>
-			<div class="steps-state">当前状态：支付完成</div>
+
 			<div class="timeline">
 				<div class="timeline-item flex">
 					<div class="time">2020-02-15 10:05:23</div>
@@ -219,9 +212,10 @@
 						<span>54,256</span>
 						<span>
 							<div class="plus-minus-operation flex">
-								<a href="javascript:;" class="minus disable">-</a>
-								<input type="text" value="1" data-max="10" data-min='1' />
-								<a href="javascript:;" class="plus">+</a>
+								<span style="margin-left: 45px;">1</span>
+								<!-- <a href="javascript:;" class="minus disable">-</a> -->
+								<!-- <input type="text" value="1" data-max="10" data-min='1' /> -->
+								<!-- <a href="javascript:;" class="plus">+</a> -->
 							</div>
 
 						</span>
@@ -280,160 +274,6 @@
 				</div>
 			</div>
 			<div class="solid-bottom mt40 mb40"></div>
-			<div class="cashier-title"><span>收银台</span><span class="help">如何支付</span></div>
-			<div class="flex flex-align-center">
-				<span>软件服务费：</span>
-				<span class="price lg-price">￥20,000 </span>
-				<div class="pay-way flex flex-align-center">
-					<a href="javascript:;" class="weixin active ml30"></a>
-					<a href="javascript:;" class="airpay ml10"></a>
-					<a href="javascript:;" class="pay-btn ml10">去支付</a>
-
-				</div>
-			</div>
-			<div class="solid-bottom mt30 mb30"></div>
-			<div>车款：<span class="price">￥20,000</span></div>
-			<div class="mt15">滞纳金：<span class="price">￥20,000</span></div>
-			<div class="mt20">合计：<span class="price lg-price">￥21,0000 </span></div>
-			<div class="red-msg">尊敬的会员，您的订单尾款支付时间已超过支付期限，平台将在您当前订单计算滞纳金！</div>
-			<table class="table">
-				<tr>
-					<th>支付类型</th>
-					<th>支付金额</th>
-					<th>支付方式</th>
-				</tr>
-				<tr>
-					<td><select name="">
-							<option value="">线上支付</option>
-						</select></td>
-					<td>
-						<div class="txt flex flex-align-center">
-							<span>￥</span>
-							<input class="flex-1" type="text" name="" id="" value="5000" />
-						</div>
-					</td>
-					<td>
-						<div class="pay-way flex flex-align-center">
-							<a href="javascript:;" class="weixin active ml30"></a>
-							<a href="javascript:;" class="airpay ml10"></a>
-							<a href="javascript:;" class="pay-btn ml10">去支付</a>
-
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td><select name="">
-							<option value="">线下支付</option>
-						</select></td>
-					<td>
-						<div class="txt flex flex-align-center">
-							<span>￥</span>
-							<input class="flex-1" type="text" name="" id="" value="5000" />
-						</div>
-					</td>
-					<td>
-						<div class="form-info">
-							<div class="form-group flex flex-pack-center">
-								<label>开户行：</label>
-								<input type="text">
-							</div>
-							<div class="form-group mt10 flex flex-pack-center">
-								<label>账户名：</label>
-								<input type="text">
-							</div>
-							<div class="form-group mt10 flex flex-pack-center">
-								<label>账户：</label>
-								<input type="text">
-							</div>
-							<div class="form-group mt10 flex flex-pack-center">
-								<label>支付凭证：</label>
-								<div class="flex flex-align-end" style="width: 220px;">
-									<div class="upload">
-										<div>
-											<img src="img/add4.png">
-											<p class="mt10">点击上传</p>
-										</div>
-										<input type="file" name="" id="" value="" />
-									</div>
-									<a href="javascript:;" class="pay-btn ml10">提交</a>
-								</div>
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td colspan="3" class="agreement">
-						请认真阅读协议并勾选：
-						<label class="check">
-							<input type="checkbox" name="agree" id="" value="" />
-							<span class="check-inner"></span>
-							<span>《竞买公告》</span>
-						</label>
-						<label class="check ml10">
-							<input type="checkbox" name="agree" id="" value="" />
-							<span class="check-inner"></span>
-							<span>《竞买公告》</span>
-						</label>
-						<label class="check ml10">
-							<input type="checkbox" name="agree" id="" value="" />
-							<span class="check-inner"></span>
-							<span>《用户竞买协议》</span>
-						</label>
-						<label class="check ml10">
-							<input type="checkbox" name="agree" id="" value="" />
-							<span class="check-inner"></span>
-							<span>《购买合同》</span>
-						</label>
-					</td>
-				</tr>
-			</table>
-			<div class="title mt40 mb20">支付记录</div>
-			<table class="table history">
-				<thead>
-					<tr>
-						<th>日期</th>
-						<th>支付方式</th>
-						<th>支付状态</th>
-						<th>支付凭证</th>
-						<th>支付金额</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>202-1-31 20:28:00</td>
-						<td>微信支付</td>
-						<td>支付成功</td>
-						<td>无</td>
-						<td>￥5,000</td>
-					</tr>
-					<tr>
-						<td>202-1-31 20:28:00</td>
-						<td>微信支付</td>
-						<td>支付成功</td>
-						<td>无</td>
-						<td>￥5,000</td>
-					</tr>
-					<tr>
-						<td>202-1-31 20:28:00</td>
-						<td>微信支付</td>
-						<td>支付成功</td>
-						<td><img src="img/demo/8.jpg" class="img"></td>
-						<td>￥5,000</td>
-					</tr>
-					<tr>
-						<td>202-1-31 20:28:00</td>
-						<td>微信支付</td>
-						<td>支付成功</td>
-						<td>无</td>
-						<td>￥5,000</td>
-					</tr>
-				</tbody>
-
-			</table>
-			<div class="mt30 text-right">
-				已支付尾款：<span class="lg-price price">￥70,000</span>
-			</div>
-			<div class="mt20 mb40 text-right">剩余需支付：<span class="lg-price price">￥70,000</span></div>
 		</div>
 		<!-- footer -->
 		<div class="footer">
@@ -486,7 +326,8 @@
 					</ul>
 				</div>
 			</div>
-			<div class="copyright flex flex-align-center flex-pack-center">版权所有：©2020 广州智慧财通投资咨询有限公司 All rights reserved. 粤ICP备20065293号</div>
+			<div class="copyright flex flex-align-center flex-pack-center">版权所有：©2020 广州智慧财通投资咨询有限公司 All rights reserved.
+				粤ICP备20065293号</div>
 		</div>
 	</body>
 </html>
@@ -512,7 +353,7 @@
 			if (val.length > 0) {
 				val = val - 0;
 			}
-			var rang =1;
+			var rang = 1;
 			var max = $('.plus-minus-operation input').attr('data-max') - 0;
 			if (val + rang > max) {
 				val = max
@@ -531,13 +372,12 @@
 			var min = $('.plus-minus-operation input').attr('data-min') - 0;
 			if (val - rang < min) {
 				val = min;
-		
+
 			} else {
 				val = val - rang;
 			}
-		
+
 			$('.plus-minus-operation input').val(val)
 		});
 	});
-	
 </script>

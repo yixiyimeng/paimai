@@ -151,9 +151,11 @@
 	margin-right: 10px;
 	width: 30px;
 }
-.login_box .login_other a img{
+
+.login_box .login_other a img {
 	width: 30px;
 }
+
 @media (max-width: 991px) {
 	.login_main {
 		background-color: #fff;
@@ -462,6 +464,13 @@
 .register_main .register_btn {
 	margin-top: 18px;
 }
+@media (min-width: 991px){
+	.register_main .register_btn2 {
+		margin-left: 140px;
+		width: 300px;
+	}
+}
+
 
 .register_main .register_btn input {
 	width: 100%;
@@ -478,9 +487,11 @@
 	font-size: 14px;
 	color: #666666;
 }
-.register_main .register_other a img{
+
+.register_main .register_other a img {
 	width: 30px;
 }
+
 .register_main .register_other span {
 	display: block;
 	height: 30px;
@@ -629,7 +640,7 @@
 	color: #333;
 	padding-left: 10px;
 	font-size: 14px;
-	width: 220px;
+	width: 300px;
 }
 
 .form-info .form-group input[type=text].lg {
@@ -642,7 +653,7 @@
 }
 
 .form-info .form-group select.sm {
-	width: 70px;
+	width: 125px;
 }
 
 .form-info .form-group .addr select {

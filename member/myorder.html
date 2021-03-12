@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>会员中心</title>
+		<title>我的订单</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link rel="stylesheet" type="text/css" href="../css/PCreset.css" />
 		<link rel="stylesheet" type="text/css" href="../css/basic.css" />
@@ -67,73 +67,82 @@
 				<div class="member_menu">
 					<ul class="clearfix">
 						<li class="visible-lg hover">会员中心</li>
-						<li id="ico_index" class="sel"><a href="./index.html">会员首页</a></li>
+						<li id="ico_index" ><a href="./index.html">会员首页</a></li>
 						<li id="ico_info"><a href="./edit.html">账户资料</a></li>
-						<li id="ico_order"><a href="./myorder.html">我的订单</a></li>
+						<li id="ico_order" class="sel"><a href="./myorder.html">我的订单</a></li>
 						<li id="ico_comment"><a href="./money.html">保证金/平台服务押金</a></li>
 						<li id="ico_fav"><a href="./remind.html">我的提醒</a></li>
 					</ul>
-
 				</div>
 				<div class="member_right">
-					<div class="m_1">
-						<div class="fl m_1_pic"><img src="../img/member/headpic.jpg" /></div>
-						<div class="fl m_1_info">
-							<dl><dt>18666081130</dt>
-								<dd class="p">注册手机：18666081130</dd>
-								<dd class="l">会员等级：普通会员</dd>
-								<dd class="e"><a href="/fangwei_shop2/Member/edit.html">修改个人信息>>></a></dd>
-							</dl>
-						</div>
-					</div>
+					<div class="right_t clearfix"><span class="ico"></span>我的订单</div>
+					<div class="member_order">
+						<table>
+							<thead>
+								<tr>
+									<td class="td_sn">订单编号</td>
+									<td class="td_pro hidden-xs">产品信息</td>
+									<td class="td_realname hidden-xs">收货人</td>
+									<td class="td_money">金额</td>
+									<td class="td_time hidden-xs">订购时间</td>
+									<td class="td_status"> <select name="status_mark" id="status_mark">
+											<option value="">所有状态</option>
+											<option value="1">待支付</option>
+											<option value="2">待审核</option>
+											<option value="3">待发货</option>
+											<option value="4">待收货</option>
+											<option value="5">已完成</option>
+											<option value="6">已取消</option>
+											<option value="7">已作废</option>
+										</select></td>
+									<td class="td_action">操作</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="td_sn"><a href="/fangwei_shop2/Member/orderinfo/id/48.html" target="_blank">021021911450910036</a></td>
+									<td class="td_pro hidden-xs">
+										<div class="order_list_pic">
+											<a href="/fangwei_shop2/Goods/index/id/39.html" target="_blank"><img src="http://test9.szfangwei.net/fangwei_shop2/Public/upload/goods/thumb/20151021153346zfhqa4.png"
+												 width="60px" height="60px" alt="力士(LUX)新活炫亮 洗护发优惠套装(洗发乳去屑型750ml+润发精华素350mlx2)"></a><a href="/fangwei_shop2/Goods/index/id/40.html"
+											 target="_blank"><img src="/fangwei_shop2/Public/upload/goods/thumb/20151021153523x2y8cz.png" width="60px"
+												 height="60px" alt="力士(LUX)精油香氛沐浴乳(幽莲魅肤720ml+凌仕浴露契合200ml)"></a> </div>
 
-					<div class="m_2 clearfix">
-						<div class="m_2_2">
-							<dl>
-								<dd class="text">平台服务押金</dd>
-								<dt>150</dt>
-								<dd class="btn_p"><a href="/fangwei_shop2/Member/point.html">去交服务押金</a></dd>
-							</dl>
-						</div>
-						<div class="m_2_1">
-							<dl>
-								<dd class="text">已交保证金</dd>
-								<dt><span class="money">￥</span>0</dt>
-								<dd class="btn_m"><a href="/fangwei_shop2/Member/money.html">立即查看</a></dd>
-							</dl>
-						</div>
-						<div class="m_2_3">
-							<dl>
-								<dd class="text">我的地址</dd>
-								<dt>0</dt>
-								<dd class="btn_m"><a href="/fangwei_shop2/Member/youhui.html">立即查看</a></dd>
-							</dl>
-						</div>
-					</div>
-					<div class="clear"></div>
+									</td>
+									<td class="td_realname hidden-xs">大大</td>
+									<td class="td_money"><span class="money">￥</span>162.00<br>在线支付</td>
+									<td class="td_time hidden-xs">2021-02-19 11:45</td>
+									<td class="td_status">待支付</td>
+									<td class="td_action">
+										<a href="/fangwei_shop2/Check/pay/id/48.html" target="_blank" class="btn_pay">付款</a> <a href="/fangwei_shop2/Member/orderinfo/id/48.html"
+										 target="_blank" class="btn_see">查看详细</a>
 
-					<div class="m_3 clearfix">
-						<dl><dt><a href="/fangwei_shop2/Member/myorder/status_mark/1.html"><img src="../img/member/ico_m_1.png" /></a></dt>
-							<dd><a href="/fangwei_shop2/Member/myorder/status_mark/1.html">待支付订单：<span>2</span></a></dd>
-						</dl>
+									</td>
+								</tr>
+								<tr>
+									<td class="td_sn"><a href="/fangwei_shop2/Member/orderinfo/id/47.html" target="_blank">021012819140110036</a></td>
+									<td class="td_pro hidden-xs">
+										<div class="order_list_pic">
+											<a href="/fangwei_shop2/Goods/index/id/38.html" target="_blank"><img src="http://test9.szfangwei.net/fangwei_shop2/Public/upload/goods/thumb/20151021153346zfhqa4.png"
+												 width="60px" height="60px" alt="完美芦荟胶40g 3支装"></a> </div>
 
-						<dl><dt><a href="/fangwei_shop2/Member/myorder/status_mark/4.html"><img src="../img/member/ico_m_2.png" /></a></dt>
-							<dd><a href="/fangwei_shop2/Member/myorder/status_mark/4.html">待收车订单：<span>0</span></a></dd>
-						</dl>
+									</td>
+									<td class="td_realname hidden-xs">大大</td>
+									<td class="td_money"><span class="money">￥</span>244.00<br>在线支付</td>
+									<td class="td_time hidden-xs">2021-01-28 19:14</td>
+									<td class="td_status">待支付</td>
+									<td class="td_action">
+										<a href="/fangwei_shop2/Check/pay/id/47.html" target="_blank" class="btn_pay">付款</a> <a href="/fangwei_shop2/Member/orderinfo/id/47.html"
+										 target="_blank" class="btn_see">查看详细</a>
 
-						<dl><dt><a href="/fangwei_shop2/Member/myfav.html"><img src="../img/member/ico_m_3.png" /></a></dt>
-							<dd><a href="/fangwei_shop2/Member/myfav.html">我的提醒：<span>5</span></a></dd>
-						</dl>
-
-						<dl><dt><a href="/fangwei_shop2/Member/comment.html"><img src="../img/member/ico_m_4.png" /></a></dt>
-							<dd><a href="/fangwei_shop2/Member/comment.html">已完成订单：<span>3</span></a></dd>
-						</dl>
+									</td>
+								</tr>
+							</tbody>
+						</table>
 
 					</div>
 
 				</div>
-
-
 			</div>
 		</main>
 		<!-- footer -->

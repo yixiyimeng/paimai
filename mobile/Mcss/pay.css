@@ -516,18 +516,23 @@
 .table {
 	border-collapse: collapse;
 	width: 100%;
-	border: 1px solid #eee;
+	/* border: 1px solid #eee; */
 	table-layout: fixed;
 	text-align: center;
 	color: #333;
 	font-size: .22rem;
 }
-
+.table>tbody{
+	border-style: hidden;
+}
 .table tr td,
 .table tr th {
 	border: 1px solid #eee;
+	
 }
-
+.table tr td{
+	border-top: none;
+}
 .table tr th {
 	height: .6rem;
 	line-height: .6rem;
