@@ -254,7 +254,7 @@
 	background: url(../img/tag.png) no-repeat center center;
 	position: absolute;
 	right: -2px;
-	bottom: 0;
+	bottom: -1px;
 }
 
 .addrlist .addr-item .state {
