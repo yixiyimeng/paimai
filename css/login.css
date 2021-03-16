@@ -904,7 +904,7 @@
 	.help_left dt {
 		background-color: #0091bd;
 		color: #fff;
-		padding-left: 30px;
+		/* padding-left: 30px; */
 	}
 
 	.help_left dt a {

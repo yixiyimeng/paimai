@@ -97,42 +97,59 @@
 						</div>
 					</td>
 					<td>
-						<div class="pay-way ">
-							<div class="flex flex-align-center"><a href="javascript:;" class="weixin active ml30"></a>
-								<a href="javascript:;" class="airpay ml10"></a>
-								<a href="javascript:;" class="pay-btn ml10">去支付</a></div>
-
-						</div>
-						<div class="form-info">
-							<div class="form-group flex flex-pack-center">
-								<label>开户行：</label>
-								<input type="text">
+						<div style="max-height: 200px; overflow: auto;">
+							<div class="pay-way ">
+								<div class="flex flex-align-center"><a href="javascript:;" class="weixin active ml30"></a>
+									<a href="javascript:;" class="airpay ml10"></a>
+									<a href="javascript:;" class="pay-btn ml10">去支付</a></div>
 							</div>
-							<div class="form-group mt10 flex flex-pack-center">
-								<label>账户名：</label>
-								<input type="text">
-							</div>
-							<div class="form-group mt10 flex flex-pack-center">
-								<label>账户：</label>
-								<input type="text">
-							</div>
-							<div class="form-group mt10 flex flex-pack-center">
-								<label>支付凭证：</label>
-								<div class="flex flex-align-end" style="width: 220px;">
-									<div class="upload">
-										<div>
-											<img src="img/add4.png">
-											<p class="mt10">点击上传</p>
-										</div>
-										<input type="file" name="" id="" value="" />
+							<div class="form-info">
+								<div class="card">
+									<div class="form-group flex flex-pack-center">
+										<label>开户行：</label>
+										<input type="text">
 									</div>
-									<a href="javascript:;" class="pay-btn ml10">提交</a>
+									<div class="form-group mt10 flex flex-pack-center">
+										<label>账户名：</label>
+										<input type="text">
+									</div>
+									<div class="form-group mt10 flex flex-pack-center">
+										<label>账户：</label>
+										<input type="text">
+									</div>
+								</div>
+								<div class="card mt10">
+									<div class="form-group flex flex-pack-center">
+										<label>开户行：</label>
+										<input type="text">
+									</div>
+									<div class="form-group mt10 flex flex-pack-center">
+										<label>账户名：</label>
+										<input type="text">
+									</div>
+									<div class="form-group mt10 flex flex-pack-center">
+										<label>账户：</label>
+										<input type="text">
+									</div>
+								</div>
+								<div class="form-group mt10 flex flex-pack-center">
+									<label>支付凭证：</label>
+									<div class="flex flex-align-end" style="width: 220px;">
+										<div class="upload">
+											<div>
+												<img src="img/add4.png">
+												<p class="mt10">点击上传</p>
+											</div>
+											<input type="file" name="" id="" value="" />
+										</div>
+										<a href="javascript:;" class="pay-btn ml10">提交</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</td>
 				</tr>
-				<tr>
+				<!-- <tr>
 					<td><select name="">
 							<option value="online">线上支付</option>
 							<option value="offline">线下支付</option>
@@ -178,7 +195,7 @@
 							</div>
 						</div>
 					</td>
-				</tr>
+				</tr> -->
 				<tr>
 					<td colspan="3" class="agreement">
 						请认真阅读协议并勾选：
@@ -317,7 +334,7 @@
 				<div class="modal-bd flex-1">
 					<div class="imgbox"></div>
 				</div>
-				
+
 			</div>
 		</div>
 	</body>
@@ -341,11 +358,11 @@
 			$(this).addClass('active').siblings().removeClass('active')
 		});
 		/* 图片预览 */
-		$('.history').on('click','.img',function(){
-			$('.preview .imgbox').css('backgroundImage','url('+$(this).attr("src")+')')
+		$('.history').on('click', '.img', function() {
+			$('.preview .imgbox').css('backgroundImage', 'url(' + $(this).attr("src") + ')')
 			$('.preview').addClass('show')
 		});
-		$('.preview .close').click(function(){
+		$('.preview .close').click(function() {
 			$('.preview').removeClass('show')
 		})
 	});

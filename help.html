@@ -12,28 +12,19 @@
 	<body>
 		<header class="top_nav">
 			<div class="visible-xs-block visible-sm-block top_nav_xs clearfix">
-				<div id="phone_menu_left" class="fl ico_menu"><a href="http://test9.szfangwei.net/fangwei_shop2/Register/login.html?ret=http://test9.szfangwei.net/fangwei_shop2/Register/index.html?ret=http://test9.szfangwei.net/fangwei_shop2/#"><img
-						 src="img/login/ico_list.jpg"></a></div>
-				<div class="fl logo_xs"><a href="http://test9.szfangwei.net/fangwei_shop2/"><img src="img/logo3.png" class="center-block"></a></div>
-				<div id="phone_menu_right" class="fr ico_member"><a href="http://test9.szfangwei.net/fangwei_shop2/Register/login.html?ret=http://test9.szfangwei.net/fangwei_shop2/Register/index.html?ret=http://test9.szfangwei.net/fangwei_shop2/#"><img
+				<div id="phone_menu_left" class="fl ico_menu"><a href="javascript:;"><img src="img/login/ico_list.jpg"></a></div>
+				<div class="fl logo_xs"><a href="javascript:;"><img src="img/logo3.png" class="center-block"></a></div>
+				<div id="phone_menu_right" class="fr ico_member"><a href="javascript:;"><img
 						 src="img/login/ico_member.jpg"></a></div>
 			</div>
 			<div class="main_menu_phone" id="main_menu_phone">
 				<ul>
-					<li><a href="http://test9.szfangwei.net/fangwei_shop2/">首页</a></li>
-					<li><a href="http://test9.szfangwei.net/fangwei_shop2/GList/index/cid/73.html">3C数码</a></li>
-					<li><a href="http://test9.szfangwei.net/fangwei_shop2/GList/index/cid/74.html">手机相机</a></li>
-					<li><a href="http://test9.szfangwei.net/fangwei_shop2/GList/index/cid/75.html">眼部护理</a></li>
-					<li><a href="http://test9.szfangwei.net/fangwei_shop2/GList/index/cid/80.html">香水彩妆</a></li>
+					<li><a href="index.html">首页</a></li>
 				</ul>
 			</div>
 			<div class="member_menu_phone" id="member_menu_phone">
 				<ul id="top_login_state">
-					<li><a href="http://test9.szfangwei.net/fangwei_shop2/Register/login.html?ret=http://test9.szfangwei.net/fangwei_shop2/Register/login.html?ret=http://test9.szfangwei.net/fangwei_shop2/Register/index.html?ret=http://test9.szfangwei.net/fangwei_shop2/"
-						 target="_blank">登录</a></li>
-					<li><a href="http://test9.szfangwei.net/fangwei_shop2/Register/index.html?ret=http://test9.szfangwei.net/fangwei_shop2/Register/login.html?ret=http://test9.szfangwei.net/fangwei_shop2/Register/index.html?ret=http://test9.szfangwei.net/fangwei_shop2/"
-						 target="_blank">注册</a></li>
-					<li><a href="http://test9.szfangwei.net/fangwei_shop2/Cart/index.html">购物车</a></li>
+					<li><a href="javascript:;"target="_blank">退出登录</a></li>
 				</ul>
 			</div>
 			<div class="hidden-xs hidden-sm top_nav_not_xs">
@@ -55,10 +46,10 @@
 
 			</div>
 			<div class="container top_nav_3 clearfix hidden-xs hidden-sm">
-				<div class="fl logo_not_xs"><a href="http://test9.szfangwei.net/fangwei_shop2/"><img src="img/logo3.png"></a></div>
+				<div class="fl logo_not_xs"><a href="index.html"><img src="img/logo3.png"></a></div>
 				<div class="fl login_t">帮助中心</div>
-				<div class="fr  login_reg"><a href="http://test9.szfangwei.net/fangwei_shop2/">回到首页</a></div>
-				<div class="fr login_home"><a href="http://test9.szfangwei.net/fangwei_shop2/Register/index.html?ret=http://test9.szfangwei.net/fangwei_shop2/Register/index.html?ret=http://test9.szfangwei.net/fangwei_shop2/">会员登录</a></div>
+				<div class="fr  login_reg"><a href="index.html">回到首页</a></div>
+				<div class="fr login_home"><a href="login.html">会员登录</a></div>
 			</div>
 		</header>
 		<main class="main-content">
@@ -108,10 +99,12 @@
 					</div>
 				</div>
 			</div>
+			
 		</main>
+		<div class="gray_bg" id="gray_bg"></div>
 		<!-- footer -->
 		<div class="footer" style="margin-top: 0;">
-			<div class="sf-footer w1200">
+			<div class="sf-footer w1200 hidden-xs hidden-sm">
 				<div class="list-row flex-1">
 					<h3>竞价学堂</h3>
 					<ul>
@@ -165,3 +158,12 @@
 		</div>
 	</body>
 </html>
+<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$('.help_left dl dt').click(function() {
+		$(this).nextAll('dd').toggle()
+	});
+	$('#phone_menu_left').click(function(){
+		$('.main_menu_phone,.gray_bg').show()
+	})
+</script>

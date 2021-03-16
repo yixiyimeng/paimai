@@ -284,7 +284,7 @@ body{
 .index_phone_tool dl:nth-child(4){margin-right:0;}
 
 .main-content{position:relative;z-index:0;border-top:1px solid #eaeaea;}
-.gray_bg{position:absolute;z-index:2;top:0;left:0;right:0;bottom:0; background-color:#000;opacity:0.6;display:none;}
+.gray_bg{position:absolute;z-index:2;top:50px;left:0;right:0;bottom:0; background-color:#000;opacity:0.6;display:none;}
 
 .content_nav{color:#333333;font-family:"微软雅黑";height:50px; line-height:50px;}
 .content_nav a{color:#333333;}

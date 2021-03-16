@@ -254,7 +254,7 @@
 	background: url(../img/tag.png) no-repeat center center;
 	position: absolute;
 	right: -2px;
-	bottom: 0;
+	bottom: -1px;
 }
 
 .addrlist .addr-item .state {
@@ -608,7 +608,11 @@
 .table .form-info {
 	display: none;
 }
-
+.table .form-info .card+.card{
+	margin-top: 20px;
+	border-top: 1px solid #ddd;
+	padding-top: 20px;
+}
 .table .form-info .form-group label {
 	display: inline-block;
 	width: 5em;
